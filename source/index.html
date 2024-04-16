@@ -14,8 +14,6 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-pic" src="#" width="33" height="38" alt="Логоти с энергичным">
-      </a>
-      <a class="main-header__logo-title" href="#">
         <span class="visualy-hiden">Ссылка на главную страницу</span>
       </a>
       <button class="main-header__button" type="button">
@@ -25,8 +23,8 @@
   </header>
 
   <main class="main">
-    <div class="main__wrapper">
-      <section class="main__promo promo-main">
+    <section class="main__promo promo-main">
+      <div class="promo-main__wrapper">
         <div class="main__bacground-promo"></div>
         <h1 class="promo-main__title">
           Функциональное питание для котов
@@ -38,13 +36,15 @@
         <a class="promo-main__link" href="#">
           ПОДОБРАТЬ ПРОГРАМУ
         </a>
-      </section>
+      </div>
+    </section>
 
-      <section class="main__programs">
+    <section class="main__programs programs-main">
+      <div class="programs-main__wrapper">
         <h2 class="visualy-hiden">
           Программы питания
         </h2>
-        <div class="main__card card-program">
+        <div class="programs-main__card card-program">
           <h3 class="card-program__title">Похудение</h3>
           <p class="card-program__text">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
@@ -55,7 +55,7 @@
           </a>
         </div>
 
-        <div class="main__card card-program">
+        <div class="programs-main__card card-program">
           <h3 class="card-program__title">нАБОР МАССЫ</h3>
           <p class="card-program__text">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
@@ -66,9 +66,11 @@
           </a>
         </div>
 
-      </section>
+      </div>
+    </section>
 
-      <section class="main__description description-feed">
+    <section class="main__description description-feed">
+      <div class="description-feed__wrapper">
         <h2 class="description-feed_title">
           Как это работает
         </h2>
@@ -104,9 +106,11 @@
             </p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="main__example example">
+    <section class="main__example example">
+      <div class="example__wrapper">
         <h2 class="example__title">
           Живой пример
         </h2>
@@ -135,12 +139,65 @@
             ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.
           </p>
         </div>
-        <div class="example__slider slider"></div>
-      </section>
+        <div class="example__slider slider">
+          <img class="slider__before" src="#" width="280" height="256" alt="Кот после неправильного питания">
+          <img class="slider__after" src="#" width="280" height="256" alt="Кот на питании кот энерджи">
+          <button class="slider__button" type="button">
+            <span>ползунок слайдера</span>
+          </button>
+        </div>
+      </div>
+    </section>
 
+    <section class="main__location location">
+      <h2 class="visualy-hiden">
+        Геолокация
+      </h2>
+      <div class="location__wrapper">
+        <p class="location__advert">
+          ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!
+        </p>
+        <address class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <div class="location__map map">
+        <img class="map_pic" src="#" width="320" height="362" alt="Адресс офиса Кэт энерджи на карте">
+      </div>
+    </section>
 
-    </div>
   </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a href="footer__logo">
+        <img class="footer_pic-logo" src="#" width="128" height="24" alt="ссылка на главную страницу Кэт энерджи">
+      </a>
+
+      <ul class="footer_social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visualy-hiden">ВК</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visualy-hiden">Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visualy-hiden">Телеграмм</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer__academy academy">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+        <img class="academy__logo" src="#" width="27" height="34" alt="Логотип HTML academy">
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
