@@ -3,10 +3,16 @@
   // .module__value
 
   &__value {
+    @include text ($Oswald, 24px, 16px);
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   // .module__descriprion
 
   &__descriprion {
-  }
+    @include text ($Lato, 12px, 12px);
+    text-align: center;
+    }
 }

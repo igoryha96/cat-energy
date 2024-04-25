@@ -3,6 +3,8 @@
   // .catalog-other__title
 
   &__title {
+    @include text ($Oswald, 24px, 24px);
+    color: #000000;
   }
 
   // .catalog-other__list

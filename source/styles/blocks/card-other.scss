@@ -3,6 +3,9 @@
   // .card-other__title
 
   &__title {
+    @include text ($Oswald, 16px, 16px);
+    color: #222222;
+    text-transform: uppercase;
   }
 
   // .card-other__wrapper
@@ -13,5 +16,8 @@
   // .card-other__text
 
   &__text {
+    font-size: 14px;
+    line-height: 14px;
+    color: #444444;
   }
 }

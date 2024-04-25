@@ -1,18 +1,34 @@
 .promo-main {
+  font-family: $Oswald;
+  color: #ffffff;
+  background-color: $main-decor;
 
   // .promo-main__wrapper
 
   &__wrapper {
+    margin: 0 auto;
+    padding-top: 138px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
   }
 
   // .promo-main__title
 
   &__title {
+    font-size: 36px;
+    margin-top: 27px;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: normal;
   }
 
   // .promo-main__text
 
   &__text {
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
   }
 
   // .promo-main__pic
@@ -23,5 +39,14 @@
   // .promo-main__link
 
   &__link {
+    background-color: $main-decor;
+    color: #ffffff;
+    display: block;
+    max-width: 280px;
+    @include text ($Oswald, 16px, 20px);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
   }
 }

@@ -1,5 +1,7 @@
 .modal-menu {
-
+  font-family: $Oswald;
+  font-size: 20px;
+  color: #000000;
   // .modal-menu__list
 
   &__list {
@@ -8,5 +10,6 @@
   // .modal-menu__link
 
   &__link {
+
   }
 }

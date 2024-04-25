@@ -8,10 +8,33 @@
   // .subscribe__title
 
   &__title {
+    @include text ($Oswald, 24px, 24px);
+    color: #000000;
+    display: block;
   }
 
   // .subscribe__text
 
   &__text {
+    @include text ($Oswald, 16px, 24px);
+    color: #000000;
+    display: block;
+  }
+
+  // .subscribe__input
+
+  &__input {
+    @include text ($Oswald, 20px, auto);
+    color: #444444;
+    text-transform: uppercase;
+    min-width: 280px;
+  }
+
+  // .subscribe__button
+
+  &__button {
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }

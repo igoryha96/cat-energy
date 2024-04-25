@@ -28,6 +28,10 @@
   // .example__expenses
 
   &__expenses {
+    @include text ($Oswald, 14px, 20px);
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   // .example__slider
