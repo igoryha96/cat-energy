@@ -2,18 +2,18 @@
 
   // .catalog-other__title
 
-  &__title {
+  .catalog-other__title {
     @include text ($Oswald, 24px, 24px);
     color: #000000;
   }
 
   // .catalog-other__list
 
-  &__list {
+  .catalog-other__list {
   }
 
   // .catalog-other__card
 
-  &__card {
+  .catalog-other__card {
   }
 }

@@ -2,7 +2,7 @@
 
   // .card-another__title
 
-  &__title {
+  .card-another__title {
     @include text ($Oswald, 16px,20px);
     color: #111111;
     text-transform: uppercase;
@@ -11,13 +11,13 @@
 
   // .card-another__sutitle
 
-  &__sutitle {
+  .card-another__sutitle {
     @include text ($Lato, 12px,16px);
     text-align: center;
   }
 
   // .card-another__link
 
-  &__link {
+  .card-another__link {
   }
 }

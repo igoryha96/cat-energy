@@ -2,7 +2,7 @@
 
   // .card-program__title
 
-  &__title {
+  .card-program__title {
     font-family: $Oswald;
     font-size: 24px;
     line-height: 37px;
@@ -10,14 +10,15 @@
 
   // .card-program__text
 
-  &__text {
+  .card-program__text {
   }
 
   // .card-program__link
 
-  &__link {
+  .card-program__link {
     font-family: $Oswald;
     font-size: 16px;
     line-height: 16px;
+    @include linkReset
   }
 }

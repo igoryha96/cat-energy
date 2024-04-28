@@ -5,7 +5,7 @@
 
   // .promo-main__wrapper
 
-  &__wrapper {
+  .promo-main__wrapper {
     margin: 0 auto;
     padding-top: 138px;
     padding-bottom: 20px;
@@ -14,7 +14,7 @@
 
   // .promo-main__title
 
-  &__title {
+  .promo-main__title {
     font-size: 36px;
     margin-top: 27px;
     margin-bottom: 25px;
@@ -25,7 +25,7 @@
 
   // .promo-main__text
 
-  &__text {
+  .promo-main__text {
     text-align: center;
     font-size: 14px;
     margin: 0;
@@ -33,12 +33,12 @@
 
   // .promo-main__pic
 
-  &__pic {
+  .promo-main__pic {
   }
 
   // .promo-main__link
 
-  &__link {
+  .promo-main__link {
     background-color: $main-decor;
     color: #ffffff;
     display: block;

@@ -13,3 +13,12 @@
   font-size: $font-size;
   line-height: $line-height;
 }
+
+@mixin listReset {
+  list-style: none;
+  padding-left: 0;
+}
+@mixin linkReset {
+  text-decoration: none;
+  color: #000000;
+}

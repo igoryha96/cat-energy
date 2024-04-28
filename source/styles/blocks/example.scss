@@ -2,32 +2,32 @@
 
   // .example__wrapper
 
-  &__wrapper {
+  .example__wrapper {
   }
 
   // .example__title
 
-  &__title {
+  .example__title {
   }
 
   // .example__text
 
-  &__text {
+  .example__text {
   }
 
   // .example__modules
 
-  &__modules {
+  .example__modules {
   }
 
   // .example__module
 
-  &__module {
+  .example__module {
   }
 
   // .example__expenses
 
-  &__expenses {
+  .example__expenses {
     @include text ($Oswald, 14px, 20px);
     color: #000000;
     text-align: center;
@@ -36,6 +36,6 @@
 
   // .example__slider
 
-  &__slider {
+  .example__slider {
   }
 }

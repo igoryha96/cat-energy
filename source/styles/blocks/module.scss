@@ -2,7 +2,7 @@
 
   // .module__value
 
-  &__value {
+  .module__value {
     @include text ($Oswald, 24px, 16px);
     color: #000000;
     text-transform: uppercase;
@@ -11,7 +11,7 @@
 
   // .module__descriprion
 
-  &__descriprion {
+  .module__descriprion {
     @include text ($Lato, 12px, 12px);
     text-align: center;
     }

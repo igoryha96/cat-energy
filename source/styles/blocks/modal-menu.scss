@@ -4,12 +4,15 @@
   color: #000000;
   // .modal-menu__list
 
-  &__list {
+  .modal-menu__list {
+    @include listReset
   }
 
   // .modal-menu__link
 
-  &__link {
-
+  .modal-menu__link {
+    a {
+      @include linkReset;
+    }
   }
 }

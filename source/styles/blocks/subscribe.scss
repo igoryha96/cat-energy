@@ -2,12 +2,12 @@
 
   // .subscribe__form
 
-  &__form {
+  .subscribe__form {
   }
 
   // .subscribe__title
 
-  &__title {
+  .subscribe__title {
     @include text ($Oswald, 24px, 24px);
     color: #000000;
     display: block;
@@ -15,7 +15,7 @@
 
   // .subscribe__text
 
-  &__text {
+  .subscribe__text {
     @include text ($Oswald, 16px, 24px);
     color: #000000;
     display: block;
@@ -23,7 +23,7 @@
 
   // .subscribe__input
 
-  &__input {
+  .subscribe__input {
     @include text ($Oswald, 20px, auto);
     color: #444444;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
 
   // .subscribe__button
 
-  &__button {
+  .subscribe__button {
     border: none;
     padding-top: 15px;
     padding-bottom: 15px;

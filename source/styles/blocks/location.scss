@@ -2,12 +2,12 @@
 
   // .location__wrapper
 
-  &__wrapper {
+  .location__wrapper {
   }
 
   // .location__advert
 
-  &__advert {
+  .location__advert {
     @include text ($Oswald, 16px, 20px);
     color: #000000;
     text-transform: uppercase;
@@ -15,13 +15,13 @@
 
   // .location__adress
 
-  &__adress {
+  .location__adress {
     @include text ($Oswald, 14px, 20px);
     font-style: normal;
   }
 
   // .location__map
 
-  &__map {
+  .location__map {
   }
 }
