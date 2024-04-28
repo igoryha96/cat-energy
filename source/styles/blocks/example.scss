@@ -1,0 +1,41 @@
+.example {
+
+  // .example__wrapper
+
+  .example__wrapper {
+  }
+
+  // .example__title
+
+  .example__title {
+  }
+
+  // .example__text
+
+  .example__text {
+  }
+
+  // .example__modules
+
+  .example__modules {
+  }
+
+  // .example__module
+
+  .example__module {
+  }
+
+  // .example__expenses
+
+  .example__expenses {
+    @include text ($Oswald, 14px, 20px);
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  // .example__slider
+
+  .example__slider {
+  }
+}

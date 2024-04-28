@@ -1,0 +1,18 @@
+.modal-menu {
+  font-family: $Oswald;
+  font-size: 20px;
+  color: #000000;
+  // .modal-menu__list
+
+  .modal-menu__list {
+    @include listReset
+  }
+
+  // .modal-menu__link
+
+  .modal-menu__link {
+    a {
+      @include linkReset;
+    }
+  }
+}

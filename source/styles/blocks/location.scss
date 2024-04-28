@@ -1,0 +1,27 @@
+.location {
+
+  // .location__wrapper
+
+  .location__wrapper {
+  }
+
+  // .location__advert
+
+  .location__advert {
+    @include text ($Oswald, 16px, 20px);
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  // .location__adress
+
+  .location__adress {
+    @include text ($Oswald, 14px, 20px);
+    font-style: normal;
+  }
+
+  // .location__map
+
+  .location__map {
+  }
+}

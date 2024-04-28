@@ -1,0 +1,23 @@
+.card-other {
+
+  // .card-other__title
+
+  .card-other__title {
+    @include text ($Oswald, 16px, 16px);
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  // .card-other__wrapper
+
+  .card-other__wrapper {
+  }
+
+  // .card-other__text
+
+  .card-other__text {
+    font-size: 14px;
+    line-height: 14px;
+    color: #444444;
+  }
+}
