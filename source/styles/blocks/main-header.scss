@@ -18,6 +18,11 @@
   // .main-header__button
 
   .main-header__button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url(../../icons/menu.svg);
+    border: none;
   }
 
   // .main-header__modl-menu
