@@ -56,9 +56,39 @@
   // .card-program__link
 
   .card-program__link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    min-width: 125px;
     font-family: $Oswald;
     font-size: 16px;
     line-height: 16px;
     @include linkReset;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 24;
+      height: 9px;
+      mask-image: url(../../icons/stack.svg#arrow);
+      background-color: #000000;
+    }
+
+    &:hover,
+    &:focus-visible {
+      &::after {
+        content: "";
+        display: block;
+        width: 32;
+        height: 10px;
+        mask-image: url(../../icons/stack.svg#arrow-big);
+        background-color: #000000;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

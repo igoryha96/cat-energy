@@ -39,11 +39,12 @@
   // .promo-main__link
 
   .promo-main__link {
+    @include linkReset;
     background-color: $main-decor;
     color: #ffffff;
     display: block;
     max-width: 280px;
-    @include text ($Oswald, 16px, 20px);
+    @include text($Oswald, 16px, 20px);
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;

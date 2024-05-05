@@ -1,15 +1,15 @@
 .catalog-other {
-
   // .catalog-other__title
 
   .catalog-other__title {
-    @include text ($Oswald, 24px, 24px);
+    @include text($Oswald, 24px, 24px);
     color: #000000;
   }
 
   // .catalog-other__list
 
   .catalog-other__list {
+    @include listReset;
   }
 
   // .catalog-other__card
