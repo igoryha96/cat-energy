@@ -1,5 +1,5 @@
 .description-feed {
-
+  padding: 20px;
   // .description-feed__wrapper
 
   .description-feed__wrapper {
@@ -13,6 +13,7 @@
   // .description-feed__list
 
   .description-feed__list {
+    @include listReset;
   }
 
   // .description-feed__item
@@ -23,5 +24,69 @@
   // .description-feed__text
 
   .description-feed__text {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: $main-decor;
+      background-image: url(../../icons/plant.svg);
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .description-feed__text--chemistry {
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: $main-decor;
+      background-image: url(../../icons/chemistry.svg);
+      background-size: 25px 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 0;
+    }
+  }
+  .description-feed__text--tableware {
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: $main-decor;
+      background-image: url(../../icons/Tableware.svg);
+      background-size: 24px 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 0;
+    }
+  }
+  .description-feed__text--clock {
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: $main-decor;
+      background-image: url(../../icons/clock.svg);
+      background-size: 26px 31px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 0;
+    }
   }
 }

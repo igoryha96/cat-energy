@@ -1,11 +1,51 @@
 .card-program {
-
   // .card-program__title
+  padding: 20px;
 
   .card-program__title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
     font-family: $Oswald;
+    color: #000000;
+    text-transform: uppercase;
     font-size: 24px;
     line-height: 37px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      background-color: $main-decor;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 36px;
+      height: 50px;
+      background-image: url(../../icons/cat-slim.svg);
+      position: absolute;
+      left: 7px;
+      bottom: 3px;
+    }
+  }
+
+  .card-program__title--mass {
+    &::after {
+      content: "";
+      display: block;
+      width: 67px;
+      height: 28px;
+      background-image: url(../../icons/cat-mass.svg);
+      position: absolute;
+      left: -8px;
+      bottom: 11px;
+    }
   }
 
   // .card-program__text
@@ -19,6 +59,6 @@
     font-family: $Oswald;
     font-size: 16px;
     line-height: 16px;
-    @include linkReset
+    @include linkReset;
   }
 }
