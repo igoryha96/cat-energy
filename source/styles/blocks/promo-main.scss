@@ -1,15 +1,14 @@
 .promo-main {
   font-family: $Oswald;
   color: #ffffff;
-  background-color: $main-decor;
 
   // .promo-main__wrapper
 
   .promo-main__wrapper {
     margin: 0 auto;
-    padding-top: 138px;
     padding-bottom: 20px;
     background-color: #ffffff;
+    position: relative;
   }
 
   // .promo-main__title
@@ -35,6 +34,8 @@
   // .promo-main__pic
 
   .promo-main__pic {
+    bottom: 193px;
+    position: absolute;
   }
 
   // .promo-main__link

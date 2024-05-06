@@ -9,8 +9,14 @@
   // .main__bacground-promo
 
   .main__bacground-promo {
-    background-color: $main-decor;
     padding-top: 27px;
+    background-color: $main-decor;
+    background-image: url(../../images/index/cat-mob@1x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom: 164px;
+    margin-bottom: 138px;
   }
 
   // .main__programs
