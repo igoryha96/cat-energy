@@ -35,12 +35,22 @@
       width: 60px;
       height: 60px;
       background-color: $main-decor;
-      background-image: url(../../icons/plant.svg);
+      background-image: url(../../icons/stack.svg#plant);
       background-size: 25px 28px;
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
       left: 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 112px;
+      height: 280px;
+      background-image: url(../../icons/stack.svg#1);
+      background-size: 112px 280px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
@@ -51,12 +61,22 @@
       width: 60px;
       height: 60px;
       background-color: $main-decor;
-      background-image: url(../../icons/chemistry.svg);
+      background-image: url(../../icons/stack.svg#chemistry);
       background-size: 25px 28px;
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
       left: 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 134px;
+      height: 280px;
+      background-image: url(../../icons/stack.svg#2);
+      background-size: 134px 280px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
   .description-feed__text--tableware {
@@ -66,12 +86,22 @@
       width: 60px;
       height: 60px;
       background-color: $main-decor;
-      background-image: url(../../icons/Tableware.svg);
+      background-image: url(../../icons/stack.svg#Tableware);
       background-size: 24px 30px;
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
       left: 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 134px;
+      height: 280px;
+      background-image: url(../../icons/stack.svg#3);
+      background-size: 134px 280px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
   .description-feed__text--clock {
@@ -81,12 +111,22 @@
       width: 60px;
       height: 60px;
       background-color: $main-decor;
-      background-image: url(../../icons/clock.svg);
+      background-image: url(../../icons/stack.svg#clock);
       background-size: 26px 31px;
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
       left: 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 136px;
+      height: 280px;
+      background-image: url(../../icons/stack.svg#4);
+      background-size: 136px 280px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
