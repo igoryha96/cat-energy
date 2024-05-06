@@ -4,44 +4,32 @@
   gap: 23px;
 
   .academy__link {
-    display: block;
+    display: flex;
     height: 37px;
-    mask-image: url(../../icons/logo-html.svg);
-    background-color: #111111;
-    mask-size: 27px 34px;
-    mask-repeat: no-repeat;
-  }
-
-  .academy__logo {
-  }
-
-  .academy__text {
     color: #444444;
     @include text(lato, 16px, 20px);
+
+    &::after {
+      content: "";
+      display: block;
+      height: 37px;
+      width: 27px;
+      mask-image: url(../../icons/logo-html.svg);
+      background-color: #666666;
+      mask-size: 27px 34px;
+      mask-repeat: no-repeat;
+    }
   }
 
   &:hover,
   &:focus-visible {
-    .academy__link {
+    .academy__link::after {
       background-color: #68b738;
-    }
-  }
-  &:hover,
-  &:focus-visible {
-    .academy__text {
-      color: #68b738;
     }
   }
 
   &:active {
     .academy__link {
-      background-color: #68b738;
-      opacity: 0.3;
-    }
-  }
-  &:active {
-    .academy__text {
-      color: #68b738;
       opacity: 0.3;
     }
   }

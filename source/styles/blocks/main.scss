@@ -1,4 +1,5 @@
 .main {
+  width: 100vw;
 
   // .main__promo
 
@@ -9,6 +10,7 @@
 
   .main__bacground-promo {
     background-color: $main-decor;
+    padding-top: 27px;
   }
 
   // .main__programs

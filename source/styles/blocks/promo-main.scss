@@ -16,7 +16,7 @@
 
   .promo-main__title {
     font-size: 36px;
-    margin-top: 27px;
+    margin: 0;
     margin-bottom: 25px;
     text-align: center;
     line-height: 36px;
@@ -28,6 +28,7 @@
   .promo-main__text {
     text-align: center;
     font-size: 14px;
+    line-height: 14px;
     margin: 0;
   }
 
