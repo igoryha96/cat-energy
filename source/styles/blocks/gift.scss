@@ -1,9 +1,9 @@
 .gift {
   padding-top: 58px;
-  background-image: linear-gradient(#68b738d9, #68b738d9),
-    image-set("../../images/cat-mob@1x.png" 1x, "../../images/cat-mob@2x.png" 2x);
+  background-image: url(../../images/catalog/cat-mob@1x.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 
   // .gift__text
 
