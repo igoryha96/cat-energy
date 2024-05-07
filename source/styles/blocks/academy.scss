@@ -1,12 +1,36 @@
 .academy {
-
-  // .academy__link
+  display: flex;
+  align-items: center;
+  gap: 23px;
 
   .academy__link {
+    display: flex;
+    height: 37px;
+    color: #444444;
+    @include text(lato, 16px, 20px);
+
+    &::after {
+      content: "";
+      display: block;
+      height: 37px;
+      width: 27px;
+      mask-image: url(../../icons/logo-html.svg);
+      background-color: #666666;
+      mask-size: 27px 34px;
+      mask-repeat: no-repeat;
+    }
   }
 
-  // .academy__logo
+  &:hover,
+  &:focus-visible {
+    .academy__link::after {
+      background-color: #68b738;
+    }
+  }
 
-  .academy__logo {
+  &:active {
+    .academy__link {
+      opacity: 0.3;
+    }
   }
 }

@@ -2,6 +2,8 @@
   // .footer__wrapper
 
   .footer__wrapper {
+    display: flex;
+    align-items: center;
     a {
       @include linkReset;
     }
@@ -10,6 +12,12 @@
   // .footer__pic-logo
 
   .footer__pic-logo {
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   // .footer__social

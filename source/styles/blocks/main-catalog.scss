@@ -12,6 +12,7 @@
   // .main-catalog__list
 
   .main-catalog__list {
+    @include listReset;
   }
 
   // .main-catalog__item

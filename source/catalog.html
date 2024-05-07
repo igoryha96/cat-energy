@@ -15,13 +15,18 @@
 
 <body class="page__body">
   <header class="main-header">
-    <h1 class="visually-hidden">Страница каталога Кэт енерджи</h1>
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="#">
-        <img class="main-header__logo-pic" src="#" width="33" height="38" alt="Логоти с энергичным котом">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desk.svg" width="202" height="59"
+            type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tab.svg" width="174" height="50" type="image/svg+xml">
+          <img class="main-header__logo-pic" src="images/logo-mob.svg" width="190" height="38"
+            alt="Логоти с энергичным котом">
+        </picture>
         <span class="visually-hidden">Ссылка на главную страницу</span>
       </a>
-      <button class="main-header__button" type="button">
+      <button class="main-header__button main-header__button--close" type="button">
         <span class="visually-hidden">Кнопка открывающая меню</span>
       </button>
     </div>
@@ -357,24 +362,23 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <a href="footer__logo">
-        <img class="footer__pic-logo" src="#" width="128" height="24" alt="ссылка на главную страницу Кэт энерджи">
+        <img class="footer__pic-logo" src="images/footer-logo.svg" width="128" height="24"
+          alt="ссылка на главную страницу Кэт энерджи">
       </a>
 
       <ul class="footer__social social">
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link social__link--vk" href="#">
             <span class="visually-hidden">ВК</span>
           </a>
         </li>
-
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link social__link--youtube" href="#">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
-
         <li class="social__item">
-          <a class="social__link" href="#">
+          <a class="social__link social__link--tg" href="#">
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
@@ -384,7 +388,6 @@
         <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>
-        <img class="academy__logo" src="#" width="27" height="34" alt="Логотип HTML academy">
       </div>
     </div>
   </footer>
