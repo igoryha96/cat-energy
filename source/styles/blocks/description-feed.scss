@@ -14,6 +14,7 @@
 
   .description-feed__list {
     @include listReset;
+    counter-reset: number 0;
   }
 
   // .description-feed__item
@@ -29,6 +30,16 @@
     padding-left: 80px;
     position: relative;
 
+    counter-increment: number;
+    &::after {
+      content: counter(number);
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      text-align: center;
+    }
+
     &::before {
       content: "";
       display: block;
@@ -42,91 +53,28 @@
       position: absolute;
       left: 0;
     }
-    &::after {
-      content: "";
-      display: none;
-      width: 112px;
-      height: 280px;
-      background-image: url(../../icons/stack.svg#1);
-      background-size: 112px 280px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
   }
 
   .description-feed__text--chemistry {
     &::before {
       content: "";
-      display: block;
-      width: 60px;
-      height: 60px;
-      background-color: $main-decor;
       background-image: url(../../icons/stack.svg#chemistry);
       background-size: 25px 28px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      left: 0;
-    }
-    &::after {
-      content: "";
-      display: none;
-      width: 134px;
-      height: 280px;
-      background-image: url(../../icons/stack.svg#2);
-      background-size: 134px 280px;
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
   .description-feed__text--tableware {
     &::before {
       content: "";
-      display: block;
-      width: 60px;
-      height: 60px;
       background-color: $main-decor;
       background-image: url(../../icons/stack.svg#Tableware);
       background-size: 24px 30px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      left: 0;
-    }
-    &::after {
-      content: "";
-      display: none;
-      width: 134px;
-      height: 280px;
-      background-image: url(../../icons/stack.svg#3);
-      background-size: 134px 280px;
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
   .description-feed__text--clock {
     &::before {
       content: "";
-      display: block;
-      width: 60px;
-      height: 60px;
-      background-color: $main-decor;
       background-image: url(../../icons/stack.svg#clock);
       background-size: 26px 31px;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      left: 0;
-    }
-    &::after {
-      content: "";
-      display: none;
-      width: 136px;
-      height: 280px;
-      background-image: url(../../icons/stack.svg#4);
-      background-size: 136px 280px;
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
 }
