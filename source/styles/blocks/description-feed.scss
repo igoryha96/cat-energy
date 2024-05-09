@@ -1,7 +1,7 @@
 .description-feed {
   padding: 20px;
   @include mediaTab {
-    padding: 0;
+    padding: 0 30px;
   }
   // .description-feed__wrapper
 
@@ -11,6 +11,9 @@
   // .description-feed__title
 
   .description-feed__title {
+    @include mediaTab {
+      margin-bottom: 32px;
+    }
   }
 
   // .description-feed__list
@@ -18,11 +21,23 @@
   .description-feed__list {
     @include listReset;
     counter-reset: number 0;
+    margin: 0;
+
+    @include mediaTab {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 153px;
+      row-gap: 37px;
+    }
   }
 
   // .description-feed__item
 
   .description-feed__item {
+    @include mediaTab {
+      width: 230px;
+      min-height: 280px;
+    }
   }
 
   // .description-feed__text
@@ -33,6 +48,7 @@
     padding-left: 80px;
     position: relative;
     counter-increment: number;
+    margin: 0;
 
     &::before {
       content: "";
@@ -49,6 +65,21 @@
     }
 
     @media (min-width: 708px) {
+      padding-left: 0;
+      display: block;
+      &::before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: $main-decor;
+        background-image: url(../../icons/stack.svg#plant);
+        background-size: 25px 28px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: static;
+        margin-bottom: 31px;
+      }
       &::after {
         content: counter(number);
         font-weight: 400;
@@ -56,6 +87,10 @@
         line-height: 280px;
         color: #f2f2f2;
         text-align: center;
+        position: absolute;
+        right: 0;
+        top: -40;
+        z-index: -1;
       }
     }
   }

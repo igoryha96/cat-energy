@@ -12,3 +12,22 @@
   .programs-main__card {
   }
 }
+
+//Media table
+
+@include mediaTab {
+  .programs-main {
+    padding: 0 30px;
+
+    .programs-main__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    // .programs-main__card
+
+    .programs-main__card {
+    }
+  }
+}

@@ -1,5 +1,10 @@
 .example {
   background-color: #eaeaea;
+  padding: 0 30px;
+
+  @include mediaTab {
+    background: linear-gradient(#ffffff 384px, #eaeaea 384px);
+  }
 
   // .example__wrapper
 
@@ -14,16 +19,20 @@
   // .example__text
 
   .example__text {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   // .example__modules
 
   .example__modules {
+    display: flex;
   }
 
   // .example__module
 
   .example__module {
+    margin-right: 43px;
   }
 
   // .example__expenses
@@ -33,10 +42,20 @@
     color: #000000;
     text-align: center;
     text-transform: uppercase;
+    margin-left: auto;
+    @include mediaTab {
+      @include text($Oswald, 20px, 20px);
+      max-width: 174px;
+      text-align: right;
+    }
   }
 
   // .example__slider
 
   .example__slider {
+    @include mediaTab {
+      width: 100vw;
+      margin-left: -30px;
+    }
   }
 }

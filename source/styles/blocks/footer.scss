@@ -4,6 +4,7 @@
   .footer__wrapper {
     display: flex;
     align-items: center;
+    flex-direction: column;
     a {
       @include linkReset;
     }
@@ -23,6 +24,9 @@
   // .footer__social
 
   .footer__social {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
   }
 
   // .footer__academy
@@ -30,6 +34,47 @@
   .footer__academy {
     a {
       @include linkReset;
+    }
+  }
+}
+
+//Media tab
+
+@include mediaTab {
+  .footer {
+    // .footer__wrapper
+
+    .footer__wrapper {
+      padding: 61px 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      a {
+        @include linkReset;
+      }
+    }
+
+    // .footer__pic-logo
+
+    .footer__pic-logo {
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.6;
+      }
+    }
+
+    // .footer__social
+
+    .footer__social {
+    }
+
+    // .footer__academy
+
+    .footer__academy {
+      a {
+        @include linkReset;
+      }
     }
   }
 }

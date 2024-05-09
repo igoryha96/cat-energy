@@ -1,14 +1,16 @@
 .location {
-
   // .location__wrapper
 
   .location__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   // .location__advert
 
   .location__advert {
-    @include text ($Oswald, 16px, 20px);
+    @include text($Oswald, 16px, 20px);
     color: #000000;
     text-transform: uppercase;
   }
@@ -16,12 +18,38 @@
   // .location__adress
 
   .location__adress {
-    @include text ($Oswald, 14px, 20px);
+    @include text($Oswald, 14px, 20px);
     font-style: normal;
   }
 
   // .location__map
 
   .location__map {
+  }
+}
+
+//Media
+
+@include mediaTab {
+  .location {
+    .location__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 61px 40px;
+    }
+
+    .location__advert {
+      @include text($Oswald, 20px, 26px);
+      max-width: 163px;
+    }
+
+    .location__adress {
+      @include text($Oswald, 16px, 20px);
+      max-width: 157px;
+    }
+
+    .location__map {
+    }
   }
 }
