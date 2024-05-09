@@ -1,4 +1,5 @@
 .example {
+  background-color: #eaeaea;
 
   // .example__wrapper
 
@@ -28,7 +29,7 @@
   // .example__expenses
 
   .example__expenses {
-    @include text ($Oswald, 14px, 20px);
+    @include text($Oswald, 14px, 20px);
     color: #000000;
     text-align: center;
     text-transform: uppercase;

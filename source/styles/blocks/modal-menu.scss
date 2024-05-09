@@ -7,6 +7,10 @@
   .modal-menu__list {
     @include listReset;
     margin: 0;
+    @media (min-width: $tablet) {
+      display: flex;
+      gap: 33px;
+    }
   }
 
   // .modal-menu__link

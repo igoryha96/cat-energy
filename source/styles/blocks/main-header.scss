@@ -1,4 +1,12 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
   // .main-header__wrapper
 
   .main-header__wrapper {
@@ -7,6 +15,9 @@
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    @media (min-width: $tablet) {
+      padding: 0;
+    }
   }
 
   // .main-header__logo
@@ -43,6 +54,9 @@
     }
     &:active {
       opacity: 0.3;
+    }
+    @media (min-width: $tablet) {
+      display: none;
     }
   }
 

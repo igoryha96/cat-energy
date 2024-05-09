@@ -1,5 +1,8 @@
 .description-feed {
   padding: 20px;
+  @include mediaTab {
+    padding: 0;
+  }
   // .description-feed__wrapper
 
   .description-feed__wrapper {
@@ -29,16 +32,7 @@
     align-items: center;
     padding-left: 80px;
     position: relative;
-
     counter-increment: number;
-    &::after {
-      content: counter(number);
-      font-weight: 400;
-      font-size: 280px;
-      line-height: 280px;
-      color: #f2f2f2;
-      text-align: center;
-    }
 
     &::before {
       content: "";
@@ -52,6 +46,17 @@
       background-position: center;
       position: absolute;
       left: 0;
+    }
+
+    @media (min-width: 708px) {
+      &::after {
+        content: counter(number);
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        color: #f2f2f2;
+        text-align: center;
+      }
     }
   }
 

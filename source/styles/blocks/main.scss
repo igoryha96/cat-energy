@@ -1,9 +1,14 @@
 .main {
   width: 100vw;
-
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
   // .main__promo
 
   .main__promo {
+    @media (min-width: $tablet) {
+      padding-top: 65px;
+    }
   }
 
   // .main__bacground-promo
@@ -17,7 +22,13 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
-    margin-bottom: 3px;
+    @media (min-width: $tablet) {
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 526px;
+      position: relative;
+    }
   }
 
   // .main__programs

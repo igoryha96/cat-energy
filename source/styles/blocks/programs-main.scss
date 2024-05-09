@@ -1,8 +1,10 @@
 .programs-main {
-
   // .programs-main__wrapper
 
   .programs-main__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   // .programs-main__card
