@@ -28,3 +28,8 @@
     @content;
   }
 }
+@mixin mediaDesk {
+  @media (min-width: 1220px) {
+    @content;
+  }
+}

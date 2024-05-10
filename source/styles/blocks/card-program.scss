@@ -5,28 +5,6 @@
   @media (min-width: $tablet) {
     padding: 77px 316px 53px 52px;
     position: relative;
-
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   width: 200px;
-    //   height: 200px;
-    //   border-radius: 50%;
-    //   background-color: $main-decor;
-    //   position: absolute;
-    //   right: 63px;
-    //   top: 92px;
-    // }
-    // &::after {
-    //   content: "";
-    //   display: block;
-    //   width: 140px;
-    //   height: 194px;
-    //   background-image: url(../../icons/cat-slim.svg);
-    //   position: absolute;
-    //   right: 92px;
-    //   top: 81px;
-    // }
   }
 
   .card-program__title {
@@ -80,11 +58,10 @@
         left: 422px;
         top: -8px;
       }
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 24px;
     }
-
-    font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 24px;
   }
 
   .card-program__title--mass {
@@ -113,6 +90,7 @@
   // .card-program__text
 
   .card-program__text {
+    max-width: 227px;
     @media (min-width: $tablet) {
       font-size: 16px;
       line-height: 24px;

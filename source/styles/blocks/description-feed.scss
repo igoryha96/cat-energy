@@ -22,11 +22,18 @@
     @include listReset;
     counter-reset: number 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
     @include mediaTab {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       gap: 153px;
+      row-gap: 37px;
+    }
+    @media (min-width: 400px) {
       row-gap: 37px;
     }
   }

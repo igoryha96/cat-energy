@@ -2,6 +2,8 @@
   // .module__value
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -11,6 +13,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    width: 124px;
   }
 
   // .module__descriprion

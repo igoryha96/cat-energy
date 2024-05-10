@@ -2,6 +2,11 @@
   font-family: $Oswald;
   font-size: 20px;
   color: #000000;
+
+  @include mediaDesk {
+    padding-top: 70px;
+    padding-bottom: 32px;
+  }
   // .modal-menu__list
 
   .modal-menu__list {

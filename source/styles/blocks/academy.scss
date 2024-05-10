@@ -1,12 +1,12 @@
 .academy {
   display: flex;
   align-items: center;
-  width: 163px;
-  gap: 23px;
+  padding: 20px 0;
 
   .academy__link {
     display: flex;
-    gap: 23px;
+    gap: 140px;
+    align-items: center;
     height: 37px;
     color: #444444;
     @include text(lato, 16px, 20px);
@@ -36,6 +36,7 @@
     }
   }
 }
+
 //media tab
 
 @include mediaTab {
@@ -43,11 +44,13 @@
     display: flex;
     align-items: center;
     gap: 23px;
+    padding: 0;
 
     .academy__link {
       width: 163px;
       display: flex;
       align-items: center;
+      gap: 23px;
       height: 37px;
       color: #444444;
       @include text(lato, 16px, 20px);
