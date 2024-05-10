@@ -31,3 +31,22 @@
     }
   }
 }
+
+//media desk
+@include mediaDesk {
+  .programs-main {
+    padding: 0 110px;
+    padding-top: 82px;
+
+    .programs-main__wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+    }
+
+    // .programs-main__card
+
+    .programs-main__card {
+    }
+  }
+}

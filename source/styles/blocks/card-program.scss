@@ -142,3 +142,72 @@
     }
   }
 }
+
+//media desk
+
+@include mediaDesk {
+  .card-program {
+    // .card-program__title
+    width: 570px;
+    padding: 41px 61px 55px 52px;
+    background-color: #f2f2f2;
+
+    .card-program__title {
+      display: flex;
+      gap: 20px;
+      position: relative;
+      padding-left: 214px;
+      margin-top: 41px;
+      margin-bottom: 76px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $main-decor;
+        left: 0;
+        top: -30px;
+      }
+
+      &::after {
+        content: "";
+        width: 70px;
+        height: 97px;
+        left: 15px;
+        top: -36px;
+      }
+    }
+
+    .card-program__title--mass {
+      &::after {
+        content: "";
+        width: 134px;
+        height: 56px;
+        left: -19px;
+        top: -10px;
+      }
+    }
+
+    // .card-program__text
+
+    .card-program__text {
+      max-width: 457px;
+    }
+
+    // .card-program__link
+
+    .card-program__link {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      position: relative;
+      min-width: 125px;
+      font-family: $Oswald;
+      font-size: 20px;
+      line-height: 16px;
+      @include linkReset;
+    }
+  }
+}

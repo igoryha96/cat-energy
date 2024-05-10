@@ -48,3 +48,53 @@
   .main__location {
   }
 }
+
+//media Desk
+
+@include mediaDesk {
+  .main {
+    margin: 0 auto;
+    width: 1440px;
+    // .main__promo
+
+    .main__promo {
+      padding-top: 0;
+    }
+
+    // .main__bacground-promo
+
+    .main__bacground-promo {
+      padding-top: 224px;
+      padding-left: 80px;
+      background-color: #ffffff;
+      background-image: image-set("../../images/index/cat-desk@1x.png" 1x, "../../images/index/cat-desk@2x.png" 2x);
+      background-size: 720px 694px;
+      background-repeat: no-repeat;
+      background-position: right 0;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 186px;
+      position: relative;
+    }
+
+    // .main__programs
+
+    .main__programs {
+    }
+
+    // .main__description
+
+    .main__description {
+    }
+
+    // .main__example
+
+    .main__example {
+    }
+
+    // .main__location
+
+    .main__location {
+    }
+  }
+}

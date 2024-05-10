@@ -3,10 +3,6 @@
   font-size: 20px;
   color: #000000;
 
-  @include mediaDesk {
-    padding-top: 70px;
-    padding-bottom: 32px;
-  }
   // .modal-menu__list
 
   .modal-menu__list {
@@ -30,6 +26,43 @@
       border-top: 1px solid #e6e6e6;
       padding-top: 23px;
       padding-bottom: 23px;
+    }
+  }
+}
+
+// Media Desk
+
+@include mediaDesk {
+  .modal-menu {
+    font-family: $Oswald;
+    font-size: 20px;
+    color: #000000;
+
+    // .modal-menu__list
+
+    .modal-menu__list {
+      @include listReset;
+      margin: 0;
+      @media (min-width: $tablet) {
+        display: flex;
+        gap: 33px;
+      }
+    }
+
+    // .modal-menu__link
+
+    .modal-menu__link {
+      a {
+        @include linkReset;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: none;
+        padding-top: 16px;
+        padding-bottom: 13px;
+        color: #ffffff;
+      }
     }
   }
 }

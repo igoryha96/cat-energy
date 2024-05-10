@@ -78,3 +78,33 @@
     }
   }
 }
+
+//Media desk
+
+@include mediaDesk {
+  .promo-main {
+    .promo-main__title {
+    }
+
+    // .promo-main__text
+
+    .promo-main__text {
+    }
+
+    .promo-main__img {
+      position: absolute;
+      right: 331px;
+      top: 143;
+    }
+
+    // .promo-main__pic
+
+    .promo-main__pic {
+    }
+
+    // .promo-main__link
+
+    .promo-main__link {
+    }
+  }
+}

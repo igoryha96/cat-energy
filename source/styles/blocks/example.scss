@@ -61,5 +61,9 @@
       width: 100vw;
       margin-left: -30px;
     }
+    @include mediaDesk {
+      width: 1440px;
+      margin-left: -30px;
+    }
   }
 }

@@ -120,3 +120,49 @@
     }
   }
 }
+
+@include mediaDesk {
+  .footer {
+    width: 1440px;
+    margin: 0 auto;
+    .footer__wrapper {
+      padding: 55px 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      a {
+        @include linkReset;
+      }
+    }
+
+    .footer_logo-wrap {
+      padding: 0;
+      position: relative;
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+
+    .footer__pic-logo {
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.6;
+      }
+    }
+
+    .footer__social {
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+
+    .footer__academy {
+      a {
+        @include linkReset;
+      }
+    }
+  }
+}
