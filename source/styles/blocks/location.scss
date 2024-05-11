@@ -38,17 +38,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 61px 40px;
+      padding: 61px 90px;
     }
 
     .location__advert {
       @include text($Oswald, 20px, 26px);
       max-width: 163px;
+      text-align: left;
     }
 
     .location__adress {
       @include text($Oswald, 16px, 20px);
       max-width: 157px;
+      text-align: right;
     }
 
     .location__map {

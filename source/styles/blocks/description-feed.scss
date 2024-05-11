@@ -1,8 +1,11 @@
 .description-feed {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 49px;
   @include mediaTab {
-    padding: 0 30px;
+    padding-top: 45px;
+    padding-bottom: 47px;
   }
+
   // .description-feed__wrapper
 
   .description-feed__wrapper {
@@ -11,6 +14,8 @@
   // .description-feed__title
 
   .description-feed__title {
+    margin: 0;
+    margin-bottom: 40px;
     @include mediaTab {
       margin-bottom: 32px;
     }
@@ -24,7 +29,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
 
     @include mediaTab {
       display: flex;

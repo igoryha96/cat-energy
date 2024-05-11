@@ -1,49 +1,18 @@
 .main {
-  width: 100vw;
-  // .main__promo
-
-  .main__promo {
-    @media (min-width: $tablet) {
-      padding-top: 65px;
-    }
+  width: 320px;
+  margin: 0 auto;
+  @include mediaTab {
+    width: 768px;
   }
-
-  // .main__bacground-promo
-
-  .main__bacground-promo {
-    padding-top: 27px;
-
-    background-color: $main-decor;
-    background-image: image-set("../../images/index/cat-mob@1x.png" 1x, "../../images/index/cat-mob@2x.png" 2x),
-      linear-gradient($main-decor 302px, #ffffff 302px);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    @media (min-width: $tablet) {
-      background: #ffffff;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 526px;
-      position: relative;
-    }
-  }
-
-  // .main__programs
 
   .main__programs {
   }
 
-  // .main__description
-
   .main__description {
   }
 
-  // .main__example
-
   .main__example {
   }
-
-  // .main__location
 
   .main__location {
   }
@@ -55,44 +24,15 @@
   .main {
     margin: 0 auto;
     width: 1440px;
-    // .main__promo
-
-    .main__promo {
-      padding-top: 0;
-    }
-
-    // .main__bacground-promo
-
-    .main__bacground-promo {
-      padding-top: 224px;
-      padding-left: 80px;
-      background-color: #ffffff;
-      background-image: image-set("../images/index/cat-desk@1x.png" 1x, "../images/index/cat-desk@2x.png" 2x);
-      background-size: 720px 694px;
-      background-repeat: no-repeat;
-      background-position: right 0;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 186px;
-      position: relative;
-    }
-
-    // .main__programs
 
     .main__programs {
     }
 
-    // .main__description
-
     .main__description {
     }
 
-    // .main__example
-
     .main__example {
     }
-
-    // .main__location
 
     .main__location {
     }

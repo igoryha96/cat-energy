@@ -143,6 +143,68 @@
   }
 }
 
+//media tab
+@include mediaTab {
+  .card-program {
+    padding: 77px 316px 53px 52px;
+    position: relative;
+
+    .card-program__title {
+      margin: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $main-decor;
+        left: 392px;
+        top: 0;
+      }
+
+      &::after {
+        content: "";
+        width: 140px;
+        height: 194px;
+        left: 422px;
+        top: -8px;
+      }
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+
+    .card-program__title--mass {
+      &::after {
+        content: "";
+        width: 268px;
+        height: 112px;
+        left: 360px;
+        top: 53px;
+      }
+    }
+
+    // .card-program__text
+
+    .card-program__text {
+      max-width: 340px;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+      margin-bottom: 48px;
+      color: #000000;
+    }
+
+    // .card-program__link
+
+    .card-program__link {
+      @media (min-width: $tablet) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 //media desk
 
 @include mediaDesk {
