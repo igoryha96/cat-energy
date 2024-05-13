@@ -71,12 +71,48 @@
 
   .example__slider {
     @include mediaTab {
-      width: 100vw;
+      width: 768px;
       margin-left: -30px;
     }
-    @include mediaDesk {
-      width: 1440px;
-      margin-left: -30px;
+  }
+}
+
+// Media desk
+@include mediaDesk {
+  .example {
+    padding-top: 0;
+    background: linear-gradient(#fff 136px, #eaeaea 136px);
+
+    .example__wrapper {
+      display: grid;
+      grid-template-columns: 1fr, 560px;
+    }
+
+    .example__title {
+      margin-bottom: 48px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    .example__text {
+      padding-top: 70px;
+      padding-right: 258px;
+    }
+
+    .example__modules {
+      display: block;
+    }
+
+    .example__module {
+    }
+
+    .example__expenses {
+    }
+
+    .example__slider {
+      width: 560px;
+      grid-row: 1 / 4;
+      grid-column: 2 /3;
     }
   }
 }

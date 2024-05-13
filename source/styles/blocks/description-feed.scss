@@ -130,3 +130,29 @@
     }
   }
 }
+
+// Media Desk
+
+@include mediaDesk {
+  .description-feed {
+    padding-bottom: 69px;
+    .description-feed__wrapper {
+    }
+
+    .description-feed__title {
+    }
+
+    .description-feed__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 94px;
+    }
+
+    .description-feed__item {
+    }
+
+    .description-feed__text {
+    }
+  }
+}

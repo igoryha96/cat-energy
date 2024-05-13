@@ -56,7 +56,7 @@
     position: relative;
     padding-top: 65px;
 
-    .main__bacground-promo {
+    .main-header__bacground-promo {
       background-color: transparent;
     }
 
@@ -101,28 +101,53 @@
 //Media desk
 @include mediaDesk {
   .promo-main {
+    width: 1440;
+    font-family: $Oswald;
+    color: #ffffff;
+    padding: 0 110px;
+    padding-left: 190px;
+    padding-top: 27px;
+
     .promo-main__title {
+      font-size: 60px;
+      text-align: center;
+      line-height: 60px;
+      font-weight: normal;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 40px;
     }
 
-    // .promo-main__text
-
     .promo-main__text {
+      text-align: left;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0;
+      margin-bottom: 52px;
+      text-transform: uppercase;
     }
 
     .promo-main__img {
-      position: absolute;
-      right: 331px;
-      top: 143;
+      z-index: 1;
+      left: 557px;
+      top: -54px;
     }
-
-    // .promo-main__pic
 
     .promo-main__pic {
     }
 
-    // .promo-main__link
-
     .promo-main__link {
+      @include linkReset;
+      background-color: $main-decor;
+      color: #ffffff;
+      display: block;
+      max-width: 280px;
+      @include text($Oswald, 20px, 26px);
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 160px;
+      padding: 10px;
     }
   }
 }
