@@ -52,8 +52,8 @@
     background: transparent;
     display: flex;
     flex-direction: column;
-    padding-bottom: 526px;
     position: relative;
+    padding-bottom: 526px;
     padding-top: 65px;
 
     .main-header__bacground-promo {
@@ -102,6 +102,7 @@
 @include mediaDesk {
   .promo-main {
     width: 1440;
+    margin: 0 auto;
     font-family: $Oswald;
     color: #ffffff;
     padding: 0 110px;

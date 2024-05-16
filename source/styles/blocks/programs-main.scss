@@ -2,6 +2,7 @@
   // .programs-main__wrapper
 
   .programs-main__wrapper {
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -17,7 +18,11 @@
 
 @include mediaTab {
   .programs-main {
+    margin: 0 auto;
     .programs-main__wrapper {
+      width: 768px;
+      padding: 0 30px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -33,10 +38,13 @@
 //media desk
 @include mediaDesk {
   .programs-main {
-    padding: 0 110px;
+    width: 100%;
     padding-top: 82px;
 
     .programs-main__wrapper {
+      padding: 0 110px;
+      min-width: 1440px;
+      margin: 0 auto;
       display: flex;
       flex-direction: row;
       gap: 80px;

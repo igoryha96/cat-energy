@@ -9,6 +9,13 @@
   // .description-feed__wrapper
 
   .description-feed__wrapper {
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    @include mediaTab {
+      min-width: 768;
+      padding: 0 30px;
+    }
   }
 
   // .description-feed__title
@@ -135,6 +142,8 @@
 
 @include mediaDesk {
   .description-feed {
+    margin: 0 auto;
+    max-width: 1440px;
     padding-bottom: 69px;
     .description-feed__wrapper {
     }

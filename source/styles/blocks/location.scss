@@ -57,3 +57,35 @@
     }
   }
 }
+
+//Media desk
+
+@include mediaDesk {
+  .location {
+    background-color: #f2f2f2;
+
+    .location__container {
+      position: relative;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .location__wrapper {
+      padding: 60px 78px 60px 80px;
+      background-color: #ffffff;
+      width: 565px;
+      position: absolute;
+      left: 110px;
+      top: 95px;
+    }
+
+    .location__advert {
+    }
+
+    .location__adress {
+    }
+
+    .location__map {
+    }
+  }
+}

@@ -94,19 +94,25 @@
 
 @include mediaDesk {
   .main-header {
-    max-width: 1440px;
+    max-width: none;
     display: block;
+    margin: 0;
     padding: 0;
     padding-top: 55px;
-
-    background:
-      image-set("../images/index/cat-desk@1x.png" 1x, "../images/index/cat-desk@2x.png" 2x) 100% 0/721px 694px,
-      linear-gradient(90deg, #ffffff 50%, $main-decor 50%) 0 0/100%;
+    background-image: linear-gradient(270deg, #68b738d9 50%, #fff 50%),
+      image-set("../images/index/cat-desk@1x.png" 1x, "../images/index/cat-desk@2x.png" 2x),
+      linear-gradient(270deg, #403e49 50%, #fff 50%);
+    background-position: 100% 0;
     background-repeat: no-repeat;
+    background-size:
+      100%,
+      720px 694px;
 
     .main-header__wrap-heder-menu {
       display: flex;
       flex-direction: row;
+      max-width: 1440px;
+      margin: 0 auto;
       margin-bottom: 110px;
     }
     .main-header__wrapper {

@@ -9,7 +9,13 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   @include mediaTab {
-    min-width: 174px;
+    width: 174px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+  @include mediaDesk {
+    width: 162px;
     position: relative;
     padding-top: 15px;
     padding-bottom: 12px;
