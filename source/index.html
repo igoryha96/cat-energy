@@ -15,46 +15,47 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desk.svg" width="202" height="59"
-            type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-tab.svg" width="174" height="50" type="image/svg+xml">
-          <img class="main-header__logo-pic" src="images/logo-mob.svg" width="190" height="38"
-            alt="Логоти с энергичным котом">
-        </picture>
-        <span class="visually-hidden">Ссылка на главную страницу</span>
-      </a>
-      <button class="main-header__button main-header__button--close" type="button">
-        <span class="visually-hidden">Кнопка открывающая меню</span>
-      </button>
+    <div class="main-header__wrap-heder-menu wrapper">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-desk.svg" width="202" height="59"
+              type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-tab.svg" width="174" height="50"
+              type="image/svg+xml">
+            <img class="main-header__logo-pic" src="images/logo-mob.svg" width="190" height="38"
+              alt="Логоти с энергичным котом">
+          </picture>
+          <span class="visually-hidden">Ссылка на главную страницу</span>
+        </a>
+        <button class="main-header__button main-header__button--close" type="button">
+          <span class="visually-hidden">Кнопка открывающая меню</span>
+        </button>
+      </div>
+      <div class="main-header__modl-menu modal-menu">
+        <ul class="modal-menu__list">
+          <li class="modal-menu__link">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="modal-menu__link">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="modal-menu__link">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="main-header__modl-menu modal-menu">
-      <ul class="modal-menu__list">
-        <li class="modal-menu__link">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="modal-menu__link">
-          <a href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="modal-menu__link">
-          <a href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </div>
-  </header>
 
-  <main class="main">
-    <section class="main__promo promo-main">
-      <div class="main__bacground-promo">
+    <section class="main-header promo-main">
+      <div class="main-header__bacground-promo">
         <h1 class="promo-main__title">
           Функциональное питание для котов
         </h1>
         <p class="promo-main__text">
           Занялся собой? Займись котом!
         </p>
-        <picture>
+        <picture class="promo-main__img">
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)"
             srcset="images/index/3-desktop/1-checken-desk@1x.png 1x, images/index/3-desktop/1-checken-desk@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)"
@@ -63,13 +64,14 @@
             srcset="images/index/1-mobile/1-checken-mobile@2x.png 2x" width="280" height="270"
             alt="Кошачий корм Кот энерджи со вкусом курицы">
         </picture>
-      </div>
-      <div class="promo-main__wrapper">
         <a class="promo-main__link" href="#">
           ПОДОБРАТЬ ПРОГРАМУ
         </a>
       </div>
     </section>
+  </header>
+
+  <main class="main">
 
     <section class="main__programs programs-main">
       <div class="programs-main__wrapper">
@@ -164,7 +166,7 @@
             </p>
           </div>
           <p class="example__expenses">
-            ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.
+            <span>ЗАТРАТЫ НА ПИТАНИЕ:</span><span>15 000 РУБ.</span>
           </p>
         </div>
         <div class="example__slider slider">
@@ -198,22 +200,24 @@
       <h2 class="visually-hidden">
         Геолокация
       </h2>
-      <div class="location__wrapper">
-        <p class="location__advert">
-          ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!
-        </p>
-        <address class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </div>
-      <div class="location__map map">
-        <picture>
-          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)"
-            srcset="images/index/3-desktop/4-location-desk@1x.png 1x, images/index/3-desktop/4-location-desk@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)"
-            srcset="images/index/2-tablet/4-location-tablet@1x.png 1x, images/index/2-tablet/4-location-tablet@2x.png 2x">
-          <img class="map__pic" src="images/index/1-mobile/4-location-mobil@1x.png"
-            srcset="images/index/1-mobile/4-location-mobil@2x.png 2x" width="320" height="362"
-            alt="Адресс офиса Кэт энерджи на карте">
-        </picture>
+      <div class="location__container">
+        <div class="location__wrapper wrapper">
+          <p class="location__advert">
+            ПРИГЛАШАЕМ <br>К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!
+          </p>
+          <address class="location__adress">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
+        </div>
+        <div class="location__map map">
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)"
+              srcset="images/index/3-desktop/4-location-desk@1x.png 1x, images/index/3-desktop/4-location-desk@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)"
+              srcset="images/index/2-tablet/4-location-tablet@1x.png 1x, images/index/2-tablet/4-location-tablet@2x.png 2x">
+            <img class="map__pic" src="images/index/1-mobile/4-location-mobil@1x.png"
+              srcset="images/index/1-mobile/4-location-mobil@2x.png 2x" width="320" height="362"
+              alt="Адресс офиса Кэт энерджи на карте">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -221,7 +225,7 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <a href="footer__logo">
+      <a class="footer_logo-wrap" href="footer__logo">
         <img class="footer__pic-logo" src="images/footer-logo.svg" width="128" height="24"
           alt="ссылка на главную страницу Кэт энерджи">
       </a>

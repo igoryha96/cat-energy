@@ -1,16 +1,12 @@
 .promo-main {
   font-family: $Oswald;
   color: #ffffff;
-
-  // .promo-main__wrapper
-
-  .promo-main__wrapper {
-    margin: 0 auto;
-    padding-bottom: 20px;
-    background-color: #ffffff;
-  }
-
-  // .promo-main__title
+  padding-top: 27px;
+  background:
+    image-set("../images/index/cat-mob@1x.png" 1x, "../images/index/cat-mob@2x.png" 2x) 0 0 /320px 302px,
+    linear-gradient($main-decor 302px, #ffffff 302px) 0 0/100%;
+  background-position: top;
+  background-repeat: no-repeat;
 
   .promo-main__title {
     font-size: 36px;
@@ -21,22 +17,20 @@
     font-weight: normal;
   }
 
-  // .promo-main__text
-
   .promo-main__text {
     text-align: center;
     font-size: 14px;
     line-height: 14px;
     margin: 0;
     margin-bottom: 29px;
+    text-transform: uppercase;
   }
 
-  // .promo-main__pic
+  .promo-main__img {
+  }
 
   .promo-main__pic {
   }
-
-  // .promo-main__link
 
   .promo-main__link {
     @include linkReset;
@@ -49,5 +43,112 @@
     text-align: center;
     margin: 0 auto;
     padding: 10px;
+  }
+}
+
+//Media Tab
+@include mediaTab {
+  .promo-main {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 526px;
+    padding-top: 65px;
+
+    .main-header__bacground-promo {
+      background-color: transparent;
+    }
+
+    .promo-main__title {
+      margin-left: 110px;
+      color: #000000;
+      font-size: 60px;
+      line-height: 60px;
+      max-width: 416px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    .promo-main__text {
+      margin-left: 110px;
+      color: #000000;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+
+    .promo-main__img {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      z-index: -1;
+    }
+
+    .promo-main__pic {
+    }
+
+    .promo-main__link {
+      margin-left: 110px;
+      @include text($Oswald, 20px, 26px);
+      padding: 14px 26px;
+      min-width: 244px;
+    }
+  }
+}
+
+//Media desk
+@include mediaDesk {
+  .promo-main {
+    width: 1440;
+    margin: 0 auto;
+    font-family: $Oswald;
+    color: #ffffff;
+    padding: 0 110px;
+    padding-left: 190px;
+    padding-top: 27px;
+
+    .promo-main__title {
+      font-size: 60px;
+      text-align: center;
+      line-height: 60px;
+      font-weight: normal;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+
+    .promo-main__text {
+      text-align: left;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0;
+      margin-bottom: 52px;
+      text-transform: uppercase;
+    }
+
+    .promo-main__img {
+      z-index: 1;
+      left: 557px;
+      top: -54px;
+    }
+
+    .promo-main__pic {
+    }
+
+    .promo-main__link {
+      @include linkReset;
+      background-color: $main-decor;
+      color: #ffffff;
+      display: block;
+      max-width: 280px;
+      @include text($Oswald, 20px, 26px);
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 160px;
+      padding: 10px;
+    }
   }
 }

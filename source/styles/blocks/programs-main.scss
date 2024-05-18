@@ -1,12 +1,58 @@
 .programs-main {
-
   // .programs-main__wrapper
 
   .programs-main__wrapper {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   // .programs-main__card
 
   .programs-main__card {
+  }
+}
+
+//Media table
+
+@include mediaTab {
+  .programs-main {
+    margin: 0 auto;
+    .programs-main__wrapper {
+      width: 768px;
+      padding: 0 30px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    // .programs-main__card
+
+    .programs-main__card {
+    }
+  }
+}
+
+//media desk
+@include mediaDesk {
+  .programs-main {
+    width: 100%;
+    padding-top: 82px;
+
+    .programs-main__wrapper {
+      padding: 0 110px;
+      min-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+    }
+
+    // .programs-main__card
+
+    .programs-main__card {
+    }
   }
 }

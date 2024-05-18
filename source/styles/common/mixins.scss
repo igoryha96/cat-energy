@@ -8,7 +8,7 @@
   }
 }
 
-@mixin text ($family,$font-size,$line-height) {
+@mixin text($family, $font-size, $line-height) {
   font-family: $family;
   font-size: $font-size;
   line-height: $line-height;
@@ -21,4 +21,15 @@
 @mixin linkReset {
   text-decoration: none;
   color: #000000;
+}
+
+@mixin mediaTab {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaDesk {
+  @media (min-width: 1220px) {
+    @content;
+  }
 }

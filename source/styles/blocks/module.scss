@@ -1,18 +1,64 @@
 .module {
-
   // .module__value
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  @include mediaTab {
+    width: 174px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+  @include mediaDesk {
+    width: 162px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
 
   .module__value {
-    @include text ($Oswald, 24px, 16px);
+    @include text($Oswald, 24px, 24x);
     color: #000000;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
+    width: 124px;
   }
 
   // .module__descriprion
 
   .module__descriprion {
-    @include text ($Lato, 12px, 12px);
+    @include text($Lato, 12px, 12px);
     text-align: center;
+    max-width: 77px;
+    margin: 0;
+    @include mediaTab {
+      font-size: 14px;
+      line-height: 14px;
     }
+  }
+
+  @include mediaTab {
+    .module__value {
+      @include text($Oswald, 30px, 37px);
+      margin-bottom: 11px;
+    }
+
+    // .module__descriprion
+
+    .module__descriprion {
+      @include text($Lato, 14px, 14px);
+      text-align: center;
+      max-width: 142px;
+      position: absolute;
+      bottom: -6px;
+      z-index: 2;
+      background-color: #ffffff;
+    }
+  }
 }

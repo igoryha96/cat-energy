@@ -5,6 +5,11 @@
   background-size: cover;
   background-position: center;
 
+  @include mediaTab {
+    background-image: url(../../images/catalog/cat-tab@1x.png);
+    padding: 57px 125px 60px 77px;
+  }
+
   // .gift__text
 
   .gift__text {
@@ -27,6 +32,17 @@
       background-color: #ffffff;
       mask-image: url(../../icons/catalog/gift.svg);
       margin-bottom: 48px;
+    }
+
+    @include mediaTab {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+
+      &::before {
+        margin-bottom: 0;
+      }
     }
   }
 }

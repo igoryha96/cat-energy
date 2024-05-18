@@ -1,6 +1,10 @@
 .card-program {
   // .card-program__title
-  padding: 20px;
+  background-color: #f2f2f2;
+  @media (min-width: $tablet) {
+    padding: 77px 316px 53px 52px;
+    position: relative;
+  }
 
   .card-program__title {
     display: flex;
@@ -22,6 +26,7 @@
       height: 50px;
       border-radius: 100%;
       background-color: $main-decor;
+      margin-left: 20px;
     }
     &::after {
       content: "";
@@ -30,8 +35,32 @@
       height: 50px;
       background-image: url(../../icons/cat-slim.svg);
       position: absolute;
-      left: 7px;
+      left: 27px;
       bottom: 3px;
+    }
+
+    @media (min-width: $tablet) {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $main-decor;
+        left: 392px;
+        top: 0;
+      }
+
+      &::after {
+        content: "";
+        width: 140px;
+        height: 194px;
+        left: 422px;
+        top: -8px;
+      }
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 24px;
     }
   }
 
@@ -43,14 +72,31 @@
       height: 28px;
       background-image: url(../../icons/cat-mass.svg);
       position: absolute;
-      left: -8px;
+      left: 11px;
       bottom: 11px;
+    }
+
+    @media (min-width: $tablet) {
+      &::after {
+        content: "";
+        width: 268px;
+        height: 112px;
+        left: 360px;
+        top: 53px;
+      }
     }
   }
 
   // .card-program__text
 
   .card-program__text {
+    max-width: 227px;
+    @media (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 48px;
+      color: #000000;
+    }
   }
 
   // .card-program__link
@@ -89,6 +135,141 @@
 
     &:active {
       opacity: 0.3;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+    }
+  }
+}
+
+//media tab
+@include mediaTab {
+  .card-program {
+    padding: 77px 316px 53px 52px;
+    position: relative;
+
+    .card-program__title {
+      margin: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: $main-decor;
+        left: 392px;
+        top: 0;
+      }
+
+      &::after {
+        content: "";
+        width: 140px;
+        height: 194px;
+        left: 422px;
+        top: -8px;
+      }
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+
+    .card-program__title--mass {
+      &::after {
+        content: "";
+        width: 268px;
+        height: 112px;
+        left: 360px;
+        top: 53px;
+      }
+    }
+
+    // .card-program__text
+
+    .card-program__text {
+      max-width: 340px;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+      margin-bottom: 48px;
+      color: #000000;
+    }
+
+    // .card-program__link
+
+    .card-program__link {
+      @media (min-width: $tablet) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+//media desk
+
+@include mediaDesk {
+  .card-program {
+    // .card-program__title
+    width: 570px;
+    padding: 41px 61px 55px 52px;
+    background-color: #f2f2f2;
+
+    .card-program__title {
+      display: flex;
+      gap: 20px;
+      position: relative;
+      padding-left: 214px;
+      margin-top: 41px;
+      margin-bottom: 76px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $main-decor;
+        left: 0;
+        top: -30px;
+      }
+
+      &::after {
+        content: "";
+        width: 70px;
+        height: 97px;
+        left: 15px;
+        top: -36px;
+      }
+    }
+
+    .card-program__title--mass {
+      &::after {
+        content: "";
+        width: 134px;
+        height: 56px;
+        left: -19px;
+        top: -10px;
+      }
+    }
+
+    // .card-program__text
+
+    .card-program__text {
+      max-width: 457px;
+    }
+
+    // .card-program__link
+
+    .card-program__link {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      position: relative;
+      min-width: 125px;
+      font-family: $Oswald;
+      font-size: 20px;
+      line-height: 16px;
+      @include linkReset;
     }
   }
 }

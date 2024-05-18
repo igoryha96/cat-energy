@@ -1,9 +1,11 @@
 .social {
   @include listReset;
   display: flex;
+  margin: 0;
 
   // .social__item
   .social__item {
+    padding: 20px 0;
   }
 
   // .social__link
@@ -70,6 +72,15 @@
     &:active::before {
       opacity: 0.3;
       background-color: #68b738;
+    }
+  }
+}
+
+//Media tab
+@include mediaTab {
+  .social {
+    .social__item {
+      padding: 0;
     }
   }
 }
