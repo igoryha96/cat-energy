@@ -39,8 +39,6 @@
     }
   }
 
-  // .main-catalog__item
-
   .main-catalog__item {
     margin-bottom: 25px;
 
@@ -53,22 +51,22 @@
     }
   }
 
-  // .main-catalog__catalog-other
-
+  .main-catalog__wrapper-other-gift {
+    @include mediaDesk {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 896px 245px;
+      column-gap: 80px;
+    }
+  }
   .main-catalog__catalog-other {
   }
-
-  // .main-catalog__gift
 
   .main-catalog__gift {
   }
 
-  // .main-catalog__subscribe
-
   .main-catalog__subscribe {
   }
-
-  // .main-catalog__location
 
   .main-catalog__location {
   }

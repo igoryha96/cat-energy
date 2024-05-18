@@ -3,6 +3,10 @@
   @include mediaTab {
     padding: 0 40px;
   }
+  @include mediaDesk {
+    width: 100%;
+    padding: 0;
+  }
 
   .catalog-other__title {
     @include text($Oswald, 24px, 24px);
@@ -13,7 +17,6 @@
 
   .catalog-other__list {
     @include listReset;
-
   }
 
   // .catalog-other__card

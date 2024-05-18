@@ -1,5 +1,7 @@
 .subscribe {
-
+  @include mediaTab {
+    padding: 80px 40px;
+  }
   // .subscribe__form
 
   .subscribe__form {
@@ -8,26 +10,51 @@
   // .subscribe__title
 
   .subscribe__title {
-    @include text ($Oswald, 24px, 24px);
+    @include text($Oswald, 24px, 24px);
     color: #000000;
     display: block;
+    margin: 0;
+    @include mediaTab {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 66px;
+    }
   }
 
   // .subscribe__text
 
   .subscribe__text {
-    @include text ($Oswald, 16px, 24px);
+    @include text($Oswald, 16px, 24px);
     color: #000000;
     display: block;
+    @include mediaTab {
+      text-align: center;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
   }
 
-  // .subscribe__input
+  .subscribe__wrap-inp-btn {
+    @include mediaTab {
+      display: flex;
+    }
+    @include mediaDesk {
+      justify-content: center;
+    }
+  }
 
   .subscribe__input {
-    @include text ($Oswald, 20px, auto);
+    @include text($Oswald, 20px, auto);
     color: #444444;
     text-transform: uppercase;
     min-width: 280px;
+    @include mediaTab {
+      width: 376px;
+    }
+    @include mediaDesk {
+      width: 752px;
+    }
   }
 
   // .subscribe__button
