@@ -1,16 +1,30 @@
 .card-other {
-
   // .card-other__title
 
+  @include mediaTab {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .card-other__title {
-    @include text ($Oswald, 16px, 16px);
+    @include text($Oswald, 16px, 16px);
     color: #222222;
     text-transform: uppercase;
+
+    @include mediaTab {
+      margin-right: auto;
+    }
   }
 
   // .card-other__wrapper
 
   .card-other__wrapper {
+    @include mediaTab {
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
+    }
   }
 
   // .card-other__text
@@ -19,5 +33,12 @@
     font-size: 14px;
     line-height: 14px;
     color: #444444;
+  }
+}
+
+.card-other__link {
+  @include mediaTab {
+    display: block;
+    min-width: 100%;
   }
 }
