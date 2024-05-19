@@ -2,6 +2,9 @@
   font-family: $Oswald;
   font-size: 20px;
   color: #000000;
+  @media (max-width: 320px) {
+    background-color: #ffffff;
+  }
 
   // .modal-menu__list
 
@@ -22,6 +25,23 @@
       border-top: 1px solid #e6e6e6;
       padding-top: 23px;
       padding-bottom: 23px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    &--closed {
+      display: none;
+    }
+
+    &--open {
+      z-index: 1;
+      position: absolute;
+      width: 320px;
+      left: 0;
+    }
+
+    &--nojs-menu {
+      display: block;
     }
   }
 }
