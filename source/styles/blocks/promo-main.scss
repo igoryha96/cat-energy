@@ -8,6 +8,14 @@
   background-position: top;
   background-repeat: no-repeat;
 
+  .main-header__bacground-promo {
+    @media (max-width: 320px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   .promo-main__title {
     font-size: 36px;
     margin: 0;
@@ -37,8 +45,9 @@
     background-color: $main-decor;
     color: #ffffff;
     display: block;
-    max-width: 280px;
+    width: 280px;
     @include text($Oswald, 16px, 20px);
+    letter-spacing: 0.7px;
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
@@ -102,12 +111,12 @@
 @include mediaDesk {
   .promo-main {
     width: 1440;
-    margin: 0 auto;
+    margin: -4px auto;
     font-family: $Oswald;
     color: #ffffff;
     padding: 0 110px;
     padding-left: 190px;
-    padding-top: 27px;
+    padding-top: 0;
 
     .promo-main__title {
       font-size: 60px;
@@ -131,7 +140,7 @@
     .promo-main__img {
       z-index: 1;
       left: 557px;
-      top: -54px;
+      top: -81px;
     }
 
     .promo-main__pic {
@@ -142,13 +151,14 @@
       background-color: $main-decor;
       color: #ffffff;
       display: block;
-      max-width: 280px;
+      width: 224px;
+      height: 54px;
       @include text($Oswald, 20px, 26px);
       text-transform: uppercase;
       text-align: center;
       margin: 0;
       margin-bottom: 160px;
-      padding: 10px;
+      padding: 14p 26px;
     }
   }
 }
