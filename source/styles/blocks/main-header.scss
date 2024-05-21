@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 320px;
   padding-top: 13px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   position: relative;
 
   .main-header__wrapper {
@@ -69,6 +69,7 @@
     margin: 0 auto;
     width: 768px;
     padding-top: 25px;
+    padding-bottom: 0;
 
     .main-header__wrap-heder-menu {
       display: flex;

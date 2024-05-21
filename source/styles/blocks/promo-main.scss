@@ -63,14 +63,14 @@
     flex-direction: column;
     position: relative;
     padding-bottom: 526px;
-    padding-top: 65px;
+    padding-top: 61px;
 
     .main-header__bacground-promo {
       background-color: transparent;
     }
 
     .promo-main__title {
-      margin-left: 110px;
+      margin-left: 119px;
       color: #000000;
       font-size: 60px;
       line-height: 60px;
@@ -80,7 +80,7 @@
     }
 
     .promo-main__text {
-      margin-left: 110px;
+      margin-left: 120px;
       color: #000000;
       font-size: 20px;
       line-height: 20px;
@@ -99,10 +99,10 @@
     }
 
     .promo-main__link {
-      margin-left: 110px;
+      margin-left: 120px;
       @include text($Oswald, 20px, 26px);
       padding: 14px 26px;
-      min-width: 244px;
+      width: 246px;
     }
   }
 }
@@ -132,6 +132,7 @@
       text-align: left;
       font-size: 20px;
       line-height: 20px;
+      max-width: 416px;
       margin: 0;
       margin-bottom: 52px;
       text-transform: uppercase;
@@ -151,14 +152,14 @@
       background-color: $main-decor;
       color: #ffffff;
       display: block;
-      width: 224px;
+      width: 244px;
       height: 54px;
       @include text($Oswald, 20px, 26px);
       text-transform: uppercase;
       text-align: center;
       margin: 0;
       margin-bottom: 160px;
-      padding: 14p 26px;
+      padding: 14px 26px;
     }
   }
 }

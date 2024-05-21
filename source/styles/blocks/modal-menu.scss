@@ -97,6 +97,8 @@
       @include listReset;
       margin: 0;
       gap: 31px;
+      max-width: 475px;
+      flex-wrap: wrap;
     }
 
     // .modal-menu__link
@@ -110,7 +112,7 @@
         justify-content: center;
         border-top: none;
         padding-top: 16px;
-        padding-bottom: 13px;
+        padding-bottom: 15px;
         color: #ffffff;
         line-height: 20px;
         font-size: 20px;

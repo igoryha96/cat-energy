@@ -81,6 +81,9 @@
 
   .example__slider {
     padding: 0 20px;
+    @media (max-width: 320px) {
+      padding: 0;
+    }
   }
 }
 

@@ -2,6 +2,27 @@
   img {
     display: block;
   }
+
+  padding: 0;
+  margin: 0 auto;
+  max-width: 280px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+
+  picture:nth-child(1) {
+    width: 50%;
+    overflow: hidden;
+    grid-area: 1 / 1 / 1 / -1;
+    z-index: 2;
+    background-color: #eaeaea;
+  }
+  picture:nth-child(2) {
+    grid-area: 1 / 1 / 1 / -1;
+    z-index: 1;
+    background-color: #eaeaea;
+  }
+
   // .slider__before
 
   .slider__before {
@@ -21,10 +42,14 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: none;
     background-color: #ffffff;
-    position: relative;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .slider__button-svg {
       color: #666666;
@@ -44,7 +69,7 @@
       z-index: -1;
       @include mediaTab {
         height: 512px;
-        z-index: 2;
+        z-index: -1;
       }
     }
     &::after {
@@ -54,7 +79,7 @@
       height: 40px;
       border-radius: 100%;
       outline: 2px solid #666666;
-      background-color: transparent;
+      background-color: #ffffff;
       position: absolute;
       left: 50%;
       top: 50%;
