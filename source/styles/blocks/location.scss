@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 26px 20px;
+    padding: 65px 22px 26px 20px;
   }
 
   // .location__advert
@@ -20,12 +20,13 @@
     @include text($Oswald, 16px, 20px);
     color: #000000;
     text-transform: uppercase;
+    width: 140px;
   }
 
   // .location__adress
 
   .location__adress {
-    @include text($Oswald, 14px, 20px);
+    @include text($Lato, 14px, 20px);
     font-style: normal;
   }
 
@@ -46,19 +47,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 61px 90px;
+      padding: 60px 70px 60px 69px;
     }
 
     .location__advert {
       @include text($Oswald, 20px, 26px);
       max-width: 163px;
       text-align: left;
+      width: 163px;
     }
 
     .location__adress {
-      @include text($Oswald, 16px, 20px);
+      @include text($Lato, 16px, 20px);
       max-width: 157px;
       text-align: right;
+      min-height: 80px;
     }
 
     .location__map {
@@ -91,6 +94,10 @@
     }
 
     .location__adress {
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .location__map {

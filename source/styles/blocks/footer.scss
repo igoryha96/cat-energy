@@ -85,7 +85,7 @@
     .footer__wrapper {
       padding: 55px 30px;
       flex-direction: row;
-      justify-content: space-between;
+
       a {
         @include linkReset;
       }
@@ -94,6 +94,7 @@
     .footer_logo-wrap {
       padding: 0;
       position: relative;
+      margin-right: 160px;
       &::after {
         content: "";
         display: none;
@@ -117,6 +118,7 @@
     }
 
     .footer__academy {
+      margin-left: auto;
       a {
         @include linkReset;
       }
@@ -131,9 +133,8 @@
     .footer__wrapper {
       margin: 0 auto;
       width: 1440px;
-      padding: 55px 110px;
+      padding: 66px 110px;
       flex-direction: row;
-      justify-content: space-between;
       a {
         @include linkReset;
       }
@@ -142,6 +143,7 @@
     .footer_logo-wrap {
       padding: 0;
       position: relative;
+      margin-right: 416px;
       &::after {
         content: "";
         display: none;

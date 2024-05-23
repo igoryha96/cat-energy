@@ -3,8 +3,8 @@
   width: 100%;
 
   @include mediaTab {
-    padding-top: 45px;
-    background: linear-gradient(#ffffff 525px, #eaeaea 384px);
+    padding-top: 25px;
+    background: linear-gradient(#ffffff 600px, #eaeaea 384px);
     min-width: 100%;
   }
 
@@ -24,7 +24,11 @@
 
   .example__title {
     padding: 0 20px;
+    margin: 0;
+    margin-top: 55px;
+    margin-bottom: 40px;
     @include mediaTab {
+      padding: 0;
       margin: 0;
       margin-bottom: 60px;
     }
@@ -33,12 +37,16 @@
   // .example__text
 
   .example__text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0 20px;
     @include mediaTab {
+      font-size: 16px;
+      line-height: 24px;
       margin-bottom: 55px;
+      padding: 0;
     }
   }
 
@@ -54,37 +62,41 @@
     margin-bottom: 20px;
     @include mediaTab {
       gap: 43px;
-    }
-  }
-
-  // .example__module
-
-  .example__module {
-  }
-
-  // .example__expenses
-
-  .example__expenses {
-    @include text($Oswald, 14px, 20px);
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 auto;
-    @include mediaTab {
-      @include text($Oswald, 20px, 20px);
-      width: 174px;
-      text-align: right;
-      margin: 0;
-      margin-left: auto;
-    }
-  }
-
-  .example__slider {
-    padding: 0 20px;
-    @media (max-width: 320px) {
       padding: 0;
+      margin-bottom: 105;
     }
   }
+}
+
+// .example__module
+
+.example__module {
+}
+
+// .example__expenses
+
+.example__expenses {
+  @include text($Oswald, 14px, 20px);
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 188px;
+  @include mediaTab {
+    @include text($Oswald, 20px, 20px);
+    width: 174px;
+    text-align: start;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 9px;
+    margin-left: auto;
+  }
+}
+
+.example__slider {
 }
 
 // Media desk
@@ -118,6 +130,7 @@
       display: flex;
       flex-direction: row;
       gap: 42px;
+      row-gap: 55px;
       flex-wrap: wrap;
       width: 366px;
       margin: 0;
@@ -129,8 +142,9 @@
     .example__expenses {
       margin: 0;
       width: 366px;
-      gap: 63px;
+      gap: 66px;
       display: flex;
+      flex-direction: row;
       margin-bottom: 75px;
     }
 

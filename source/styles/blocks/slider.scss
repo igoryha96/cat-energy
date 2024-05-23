@@ -2,13 +2,15 @@
   img {
     display: block;
   }
-
-  padding: 0;
+  padding: 0 20px;
   margin: 0 auto;
   max-width: 280px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
+  @media (max-width: 320px) {
+    padding: 0;
+  }
 
   picture:nth-child(1) {
     width: 50%;
@@ -119,7 +121,7 @@
 @include mediaTab {
   .slider {
     padding: 0;
-    margin: 0 auto;
+    padding-bottom: 101px;
     max-width: 560px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -130,12 +132,12 @@
       overflow: hidden;
       grid-area: 1 / 1 / 1 / -1;
       z-index: 2;
-      background: linear-gradient(#fff 136px, #eaeaea 136px);
+      background: linear-gradient(#ffffff 151px, #eaeaea 136px);
     }
     picture:nth-child(2) {
       grid-area: 1 / 1 / 1 / -1;
       z-index: 1;
-      background: linear-gradient(#fff 136px, #eaeaea 136px);
+      background: linear-gradient(#ffffff 151px, #eaeaea 136px);
     }
 
     .slider__before {
@@ -161,7 +163,7 @@
       background-color: #ffffff;
       border: 2px solid #666666;
       position: absolute;
-      top: 50%;
+      top: 256px;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 4;

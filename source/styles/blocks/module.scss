@@ -1,18 +1,21 @@
 .module {
-  // .module__value
+  width: 124px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 13px;
+  padding-bottom: 17px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  position: relative;
   @include mediaTab {
-    width: 174px;
+    width: 162px;
     position: relative;
     padding-top: 15px;
-    padding-bottom: 12px;
+    padding-bottom: 7px;
   }
   @include mediaDesk {
     width: 162px;
@@ -22,7 +25,7 @@
   }
 
   .module__value {
-    @include text($Oswald, 24px, 24x);
+    @include text($Oswald, 24px, 24px);
     color: #000000;
     text-transform: uppercase;
     text-align: center;
@@ -30,11 +33,13 @@
     width: 124px;
   }
 
-  // .module__descriprion
-
   .module__descriprion {
+    position: absolute;
+    z-index: 1;
+    bottom: -16px;
     @include text($Lato, 12px, 12px);
     text-align: center;
+    background-color: #eaeaea;
     max-width: 77px;
     margin: 0;
     @include mediaTab {
@@ -57,6 +62,17 @@
       max-width: 142px;
       position: absolute;
       bottom: -6px;
+      z-index: 2;
+      background-color: #ffffff;
+    }
+  }
+  @include mediaDesk {
+    .module__descriprion {
+      @include text($Lato, 14px, 14px);
+      text-align: center;
+      max-width: 142px;
+      position: absolute;
+      bottom: -2px;
       z-index: 2;
       background-color: #ffffff;
     }

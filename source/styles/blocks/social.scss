@@ -5,7 +5,7 @@
 
   // .social__item
   .social__item {
-    padding: 20px 0;
+    padding: 16px 0;
   }
 
   // .social__link
@@ -40,7 +40,7 @@
     &::before {
       content: "";
       width: 28px;
-      height: 22px;
+      height: 20px;
       position: absolute;
       mask-image: url(../../icons/stack.svg#youtube);
       background-color: #666666;
@@ -63,6 +63,12 @@
       position: absolute;
       mask-image: url(../../icons/stack.svg#tg);
       background-color: #666666;
+      @include mediaTab {
+        height: 20px;
+      }
+      @include mediaDesk {
+        height: 20px;
+      }
     }
 
     &:hover::before,
