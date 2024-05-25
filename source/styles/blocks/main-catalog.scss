@@ -1,5 +1,12 @@
 .main-catalog {
-  max-width: 100%;
+  width: 100%;
+  margin-top: 15px;
+  @include mediaTab {
+    margin-top: 61px;
+  }
+  @include mediaDesk {
+    margin-top: 44px;
+  }
 
   img {
     display: block;
@@ -23,6 +30,9 @@
   .main-catalog__catalog {
   }
 
+  .main-catalog__title {
+    margin-bottom: 41px;
+  }
   .main-catalog__list {
     @include listReset;
 
@@ -40,8 +50,6 @@
   }
 
   .main-catalog__item {
-    margin-bottom: 25px;
-
     @include mediaTab {
       max-width: 324px;
       margin: 0;

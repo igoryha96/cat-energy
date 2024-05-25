@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="main-header header-catalog">
-    <div class="main-header__wrap-heder-menu wrapper">
+    <div class="main-header__wrap-heder-menu main-header__wrap-heder-menu--catalog wrapper">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="#">
           <picture>
@@ -28,19 +28,19 @@
           </picture>
           <span class="visually-hidden">Ссылка на главную страницу</span>
         </a>
-        <button class="main-header__button main-header__button--close" type="button">
+        <button class="main-header__button main-header__button--closed main-header__button--nojs" type="button">
           <span class="visually-hidden">Кнопка открывающая меню</span>
         </button>
       </div>
-      <div class="main-header__modl-menu modal-menu">
+      <div class="main-header__modl-menu modal-menu modal-menu--closed  modal-menu--nojs-menu">
         <ul class="modal-menu__list">
-          <li class="modal-menu__link --catalog-link">
+          <li class="modal-menu__link modal-menu__link--catalog">
             <a href="index.html">Главная</a>
           </li>
-          <li class="modal-menu__link --catalog-link">
+          <li class="modal-menu__link modal-menu__link--catalog">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="modal-menu__link --catalog-link">
+          <li class="modal-menu__link modal-menu__link--catalog">
             <a href="#">Подбор программы</a>
           </li>
         </ul>
@@ -51,7 +51,7 @@
   <main class="main-catalog">
     <div class="main-catalog__wrapper">
       <section class="main-catalog__catalog">
-        <h2 class="index-title">Каталог продукции</h2>
+        <h2 class="main-catalog__title index-title">Каталог продукции</h2>
         <ul class="main-catalog__list">
           <li class="main-catalog__item card-catalog">
             <div class="card-catalog__content">
@@ -73,8 +73,8 @@
                 <dt>Масса</dt>
                 <dd>500 г</dd>
                 <dt>Вкус</dt>
-                <dd>КУРИЦА</dd>
-                <dt>Масса</dt>
+                <dd>Курица</dd>
+                <dt>Цена</dt>
                 <dd>700 ₽</dd>
               </dl>
             </div>
@@ -103,8 +103,8 @@
                 <dt>Масса</dt>
                 <dd>1000 г</dd>
                 <dt>Вкус</dt>
-                <dd>КУРИЦА</dd>
-                <dt>Масса</dt>
+                <dd>Курица</dd>
+                <dt>Цена</dt>
                 <dd>1000 ₽</dd>
               </dl>
             </div>
@@ -132,7 +132,7 @@
                 <dd>500 г</dd>
                 <dt>Вкус</dt>
                 <dd>Рыба</dd>
-                <dt>Масса</dt>
+                <dt>Цена</dt>
                 <dd>700 ₽</dd>
               </dl>
             </div>
@@ -162,7 +162,7 @@
                 <dd>1000 г</dd>
                 <dt>Вкус</dt>
                 <dd>Рыба</dd>
-                <dt>Масса</dt>
+                <dt>Цена</dt>
                 <dd>1000 ₽</dd>
               </dl>
             </div>
@@ -190,7 +190,7 @@
                 <dd>500 г</dd>
                 <dt>Вкус</dt>
                 <dd>Гречка</dd>
-                <dt>Масса</dt>
+                <dt>Цена</dt>
                 <dd>400 ₽</dd>
               </dl>
             </div>
@@ -220,7 +220,7 @@
                 <dd>1000 г</dd>
                 <dt>Вкус</dt>
                 <dd>Гречка</dd>
-                <dt>Масса</dt>
+                <dt>Цена</dt>
                 <dd>700 ₽</dd>
               </dl>
             </div>
@@ -248,7 +248,7 @@
                 <dd>500 г</dd>
                 <dt>Вкус</dt>
                 <dd>Рис</dd>
-                <dt>Масса</dt>
+                <dt>Цена</dt>
                 <dd>500 ₽</dd>
               </dl>
             </div>
