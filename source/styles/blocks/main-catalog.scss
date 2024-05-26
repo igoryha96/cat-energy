@@ -32,15 +32,22 @@
 
   .main-catalog__title {
     margin-bottom: 41px;
+    @include mediaTab {
+      margin-bottom: 165px;
+    }
+    @include mediaDesk {
+      margin-bottom: 165px;
+    }
   }
   .main-catalog__list {
     @include listReset;
-
+    margin-bottom: 50px;
     @include mediaTab {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      row-gap: 141px;
+      row-gap: 142px;
       column-gap: 60px;
+      margin-bottom: 74px;
     }
     @include mediaDesk {
       grid-template-columns: repeat(4, 1fr);

@@ -14,7 +14,17 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 161px 37px 40px 37px;
+    padding: 160px 41px 40px 43px;
+    background-color: #f2f2f2;
+  }
+  @include mediaDesk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 245px;
+    padding: 150px 30px 40px;
     background-color: #f2f2f2;
   }
   dl {
@@ -29,6 +39,26 @@
         margin: 0;
       }
     }
+    @include mediaTab {
+      width: 250px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: -3px;
+      * {
+        padding: 5px 0;
+        border-bottom: 1px solid #cdcdcd;
+      }
+    }
+    @include mediaDesk {
+      width: 169px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: -3px;
+      * {
+        padding: 5px 0;
+        border-bottom: 1px solid #cdcdcd;
+      }
+    }
   }
   // .card-catalog__content
 
@@ -37,10 +67,27 @@
     align-items: center;
     justify-content: center;
 
-    @include mediaDesk {
+    @include mediaTab {
       position: absolute;
-      top: -50%;
-      transform: translateY(56%);
+      top: -71px;
+      width: 200px;
+      height: 210px;
+      @include mediaDesk {
+        picture {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 200px;
+          height: 210px;
+        }
+      }
+    }
+    @include mediaDesk {
+      width: 169px;
+      height: 210px;
+      position: absolute;
+      top: -71px;
+      left: 35px;
       @include mediaDesk {
         picture {
           display: flex;
@@ -66,6 +113,15 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+    @include mediaTab {
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 16px;
+    }
+    @include mediaDesk {
+      gap: 21px;
+      margin-bottom: 24px;
+    }
   }
 
   // .card-catalog__title
@@ -73,8 +129,15 @@
   .card-catalog__title {
     @include text($Oswald, 16px, 20px);
     @include linkReset;
+    width: 76px;
     color: #222222;
     text-transform: uppercase;
+    @include mediaTab {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      width: 135px;
+    }
   }
 
   // .card-catalog__link
@@ -86,6 +149,14 @@
     grid-column: 1 /-1;
     @include mediaTab {
       display: block;
+      font-size: 20px;
+      line-height: 24px;
+      width: 250px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    @include mediaDesk {
+      width: 169px;
     }
   }
 }
