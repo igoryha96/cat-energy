@@ -1,5 +1,4 @@
 .catalog-other {
-  // .catalog-other__title
   @include mediaTab {
     padding: 0 40px;
   }
@@ -10,16 +9,60 @@
 
   .catalog-other__title {
     @include text($Oswald, 24px, 24px);
+    font-weight: 400;
     color: #000000;
+    padding-bottom: 36px;
+    margin: 0;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #cdcdcd;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      z-index: -1;
+      background-color: #68b738;
+      width: 100vw;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      box-shadow: 100vw 0 #68b738;
+      @include mediaTab {
+        top: 14px;
+      }
+    }
+    &::after {
+      content: "";
+      z-index: -1;
+      background-color: #fff;
+      width: 102%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -20;
+      @include mediaTab {
+        left: -39px;
+        width: 60%;
+      }
+    }
+    @include mediaTab {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 43px;
+      border-bottom: none;
+    }
   }
-
-  // .catalog-other__list
 
   .catalog-other__list {
     @include listReset;
+    margin: 0;
+    margin-bottom: 38px;
+    @include mediaTab {
+      margin-bottom: 71px;
+    }
   }
-
-  // .catalog-other__card
 
   .catalog-other__card {
   }

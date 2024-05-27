@@ -64,7 +64,7 @@
       font-size: 16px;
       line-height: 18px;
       width: 170px;
-      margin-bottom: 80px;
+      margin-bottom: 83px;
     }
     @include mediaDesk {
       margin-bottom: 90px;
@@ -77,6 +77,9 @@
     background-color: #f2f2f2;
     color: #444444;
     margin: 0 auto;
+    @include mediaTab {
+      width: 250px;
+    }
     @include mediaDesk {
       width: 169px;
     }

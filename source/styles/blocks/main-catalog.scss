@@ -45,9 +45,9 @@
     @include mediaTab {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      row-gap: 142px;
+      row-gap: 140px;
       column-gap: 60px;
-      margin-bottom: 74px;
+      margin-bottom: 73px;
     }
     @include mediaDesk {
       grid-template-columns: repeat(4, 1fr);
