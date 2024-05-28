@@ -12,6 +12,19 @@
     padding: 26px 37px;
     margin-bottom: 0;
   }
+  @include mediaDesk {
+    border: none;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    width: 896px;
+    display: grid;
+    grid-template-columns: 326px 285px 1fr;
+    align-items: center;
+  }
 
   .card-other__title {
     @include text($Oswald, 16px, 16px);
@@ -25,6 +38,9 @@
       margin-right: auto;
       font-size: 20px;
       line-height: 20px;
+    }
+    @include mediaDesk {
+      margin: 0;
     }
   }
 
@@ -41,6 +57,12 @@
       gap: 22px;
       padding-right: 3px;
       padding-top: 3px;
+    }
+    @include mediaDesk {
+      margin: 0;
+      width: 320px;
+      justify-items: start;
+      padding-top: 8px;
     }
   }
 
@@ -63,5 +85,12 @@
     margin-top: 8px;
     display: block;
     min-width: 100%;
+  }
+  @include mediaDesk {
+    margin: 0;
+    display: block;
+    min-width: auto;
+    width: 244px;
+    margin-left: auto;
   }
 }

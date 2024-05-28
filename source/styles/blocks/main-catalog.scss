@@ -78,6 +78,10 @@
   }
 
   .main-catalog__gift {
+    margin-bottom: 40px;
+    @include mediaTab {
+      margin-bottom: 2px;
+    }
   }
 
   .main-catalog__subscribe {

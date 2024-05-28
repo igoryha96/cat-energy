@@ -138,6 +138,9 @@
       text-align: center;
       width: 135px;
     }
+    @include mediaTab {
+      margin-left: -2px;
+    }
   }
 
   // .card-catalog__link

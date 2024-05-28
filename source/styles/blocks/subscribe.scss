@@ -2,6 +2,11 @@
   @include mediaTab {
     padding: 80px 40px;
   }
+  @include mediaDesk {
+    padding: 0;
+    padding-top: 26px;
+    margin-bottom: 103px;
+  }
   // .subscribe__form
 
   .subscribe__form {
@@ -11,13 +16,42 @@
 
   .subscribe__title {
     @include text($Oswald, 24px, 24px);
+    font-weight: 400;
     color: #000000;
     display: block;
     margin: 0;
+    margin-bottom: 33px;
+    position: relative;
+    width: fit-content;
+    background-color: #ffffff;
+    box-shadow:
+      -40px 0 #ffffff,
+      40px 0 #ffffff;
+    &::before {
+      content: "";
+      z-index: -1;
+      background-color: #68b738;
+      width: 100vw;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 11px;
+      right: 0;
+      box-shadow: 100vw 0 #68b738;
+      @include mediaDesk {
+        top: 17px;
+      }
+    }
+
     @include mediaTab {
       font-size: 32px;
       line-height: 32px;
       margin-bottom: 66px;
+    }
+    @include mediaDesk {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 72px;
     }
   }
 
@@ -27,6 +61,8 @@
     @include text($Oswald, 16px, 24px);
     color: #000000;
     display: block;
+    text-align: center;
+    margin-bottom: 24px;
     @include mediaTab {
       text-align: center;
       font-size: 24px;
@@ -40,28 +76,44 @@
       display: flex;
     }
     @include mediaDesk {
+      margin: 0 auto;
       justify-content: center;
     }
   }
 
   .subscribe__input {
-    @include text($Oswald, 20px, auto);
+    @include text($Oswald, 20px, 20px);
+    border: 1px solid #cdcdcd;
     color: #444444;
     text-transform: uppercase;
     min-width: 280px;
+    padding: 13px;
+    margin-bottom: 16px;
     @include mediaTab {
       width: 376px;
+      margin: 0;
+      padding: 10px;
     }
     @include mediaDesk {
-      width: 752px;
+      width: 496px;
+      padding: 13px;
     }
   }
 
   // .subscribe__button
 
   .subscribe__button {
+    @include text($Oswald, 20px, 26px);
     border: none;
     padding-top: 15px;
     padding-bottom: 15px;
+    @include mediaTab {
+      padding: 15 26px;
+      width: 256px;
+    }
+    @include mediaDesk {
+      padding: 15 26px;
+      width: 256px;
+    }
   }
 }
