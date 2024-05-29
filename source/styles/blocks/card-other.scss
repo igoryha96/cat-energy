@@ -1,7 +1,8 @@
 .card-other {
   border-bottom: solid 1px #cdcdcd;
-  padding-bottom: 17px;
-  margin-bottom: 13px;
+  padding-bottom: 19px;
+  margin-bottom: 12px;
+
   @include mediaTab {
     display: flex;
     justify-content: space-between;

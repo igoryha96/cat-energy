@@ -31,6 +31,9 @@
       top: 11px;
       right: 0;
       box-shadow: 100vw 0 #68b738;
+      @include mediaTab {
+        top: 13px;
+      }
       @include mediaDesk {
         top: 15px;
       }
@@ -64,7 +67,7 @@
   .catalog-other__list {
     @include listReset;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
     @include mediaTab {
       margin-bottom: 71px;
     }

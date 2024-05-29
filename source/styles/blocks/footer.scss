@@ -80,12 +80,12 @@
 
 @include mediaTab {
   .footer {
-    width: 768px;
-    margin: 0 auto;
+    width: 100%;
     .footer__wrapper {
       padding: 55px 30px;
       flex-direction: row;
-
+      width: 768px;
+      margin: 0 auto;
       a {
         @include linkReset;
       }

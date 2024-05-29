@@ -1,6 +1,11 @@
 .map {
   display: flex;
   justify-content: center;
+  display: none;
+
+  &--nojs {
+    display: block;
+  }
   @include mediaTab {
     width: 768px;
     margin: 0 auto;
