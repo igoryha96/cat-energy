@@ -148,6 +148,7 @@
 
 @include mediaDesk {
   .description-feed {
+    border-bottom: none;
     margin: 0 auto;
     min-width: 100%;
     padding-top: 70px;

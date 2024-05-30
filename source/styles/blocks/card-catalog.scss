@@ -124,8 +124,6 @@
     }
   }
 
-  // .card-catalog__title
-
   .card-catalog__title {
     @include text($Oswald, 16px, 20px);
     @include linkReset;
@@ -142,8 +140,6 @@
       margin-left: -2px;
     }
   }
-
-  // .card-catalog__link
 
   .card-catalog__link {
     font-size: 16px;
