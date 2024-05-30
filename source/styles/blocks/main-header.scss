@@ -50,9 +50,6 @@
     &--closed {
       background-image: url(../../icons/menu.svg);
     }
-    // &--nojs {
-    //   background-image: none;
-    // }
   }
 
   .main-header__modl-menu {
@@ -81,23 +78,8 @@
       margin-bottom: 0;
     }
 
-    .main-header__logo {
-    }
-
-    .main-header__logo-pic {
-    }
-
     .main-header__button {
       display: none;
-    }
-
-    .main-header__button--close {
-    }
-
-    .main-header__modl-menu {
-    }
-
-    .main-header__promo {
     }
   }
 }
@@ -149,9 +131,6 @@
 
     .main-header__button--close {
       background-image: url(../../icons/close-menu.svg);
-    }
-
-    .main-header__modl-menu {
     }
   }
 }

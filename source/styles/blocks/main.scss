@@ -3,18 +3,6 @@
   @include mediaTab {
     min-width: 100%;
   }
-
-  .main__programs {
-  }
-
-  .main__description {
-  }
-
-  .main__example {
-  }
-
-  .main__location {
-  }
 }
 
 //media Desk
@@ -22,17 +10,5 @@
 @include mediaDesk {
   .main {
     min-width: 100%;
-
-    .main__programs {
-    }
-
-    .main__description {
-    }
-
-    .main__example {
-    }
-
-    .main__location {
-    }
   }
 }

@@ -91,8 +91,6 @@
     }
   }
 
-  // .card-program__text
-
   .card-program__text {
     max-width: 227px;
     margin: 0;
@@ -104,8 +102,6 @@
       color: #000000;
     }
   }
-
-  // .card-program__link
 
   .card-program__link {
     display: flex;
@@ -192,8 +188,6 @@
       }
     }
 
-    // .card-program__text
-
     .card-program__text {
       max-width: 340px;
       font-size: 16px;
@@ -202,8 +196,6 @@
       margin-bottom: 48px;
       color: #000000;
     }
-
-    // .card-program__link
 
     .card-program__link {
       @media (min-width: $tablet) {
@@ -270,14 +262,10 @@
       }
     }
 
-    // .card-program__text
-
     .card-program__text {
       max-width: 457px;
       margin-bottom: 24px;
     }
-
-    // .card-program__link
 
     .card-program__link {
       display: flex;

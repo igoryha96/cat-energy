@@ -51,6 +51,13 @@
     text-align: center;
     margin: 0 auto;
     padding: 10px;
+    &:hover,
+    &:focus-visible {
+      background-color: #5eaa2f;
+    }
+    &:active {
+      background-color: #5eaa2f;
+    }
   }
 }
 

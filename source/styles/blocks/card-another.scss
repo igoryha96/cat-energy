@@ -6,6 +6,7 @@
   padding-top: 24px;
   @include mediaTab {
     padding-top: 50px;
+    border: 2px solid #f2f2f2;
   }
 
   .card-another__title {

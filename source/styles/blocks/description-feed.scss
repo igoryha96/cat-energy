@@ -160,9 +160,6 @@
     }
 
     .description-feed__list {
-      // display: flex;
-      // flex-wrap: wrap;
-      // gap: 94px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 78px;
@@ -170,9 +167,6 @@
 
     .description-feed__item {
       width: auto;
-    }
-
-    .description-feed__text {
     }
   }
 }
