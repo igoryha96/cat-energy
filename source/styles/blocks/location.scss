@@ -63,6 +63,9 @@
       max-width: 157px;
       text-align: right;
       min-height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .location__map {
@@ -77,9 +80,9 @@
     background-color: #f2f2f2;
 
     .location__container {
-      position: relative;
       width: 1440px;
       margin: 0 auto;
+      position: relative;
     }
 
     .location__wrapper {

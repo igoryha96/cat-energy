@@ -62,6 +62,15 @@
     }
 
     .modal-menu__link {
+      padding-top: 6px;
+      padding-bottom: 6px;
+      &--current-catalog {
+        border-bottom: 1px solid #68b738;
+      }
+      &--current-index {
+        border-bottom: 1px solid #68b738;
+      }
+
       a {
         @include linkReset;
         text-transform: uppercase;
@@ -86,12 +95,20 @@
     .modal-menu__list {
       @include listReset;
       margin: 0;
-      gap: 31px;
+      gap: 32px;
       max-width: 475px;
       flex-wrap: wrap;
     }
 
     .modal-menu__link {
+      &--current-index {
+        border-bottom: 1px solid #ffffff;
+        padding-top: 1px;
+        padding-bottom: 0px;
+      }
+      &--current-catalog {
+        padding-top: 0;
+      }
       a {
         @include linkReset;
         text-transform: uppercase;
@@ -99,8 +116,8 @@
         align-items: center;
         justify-content: center;
         border-top: none;
-        padding-top: 16px;
-        padding-bottom: 15px;
+        padding-top: 11px;
+        padding-bottom: 10px;
         color: #ffffff;
         line-height: 20px;
         font-size: 20px;

@@ -7,20 +7,24 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: solid 1px #cdcdcd;
+    border-left: solid 1px #cdcdcd;
+    border-right: solid 1px #cdcdcd;
     width: 708px;
     margin-left: -39px;
     padding: 26px 37px;
+    padding-top: 27px;
     margin-bottom: 0;
+    &:first-child {
+      border-top: solid 1px #cdcdcd;
+    }
   }
   @include mediaDesk {
     border: none;
-    border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
     margin: 0;
     padding: 0;
     padding-top: 14px;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
     width: 896px;
     display: grid;
     grid-template-columns: 326px 285px 1fr;
