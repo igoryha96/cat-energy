@@ -2,17 +2,30 @@
   img {
     display: block;
   }
-  // .slider__before
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 280px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
 
-  .slider__before {
+  @media (max-width: 320px) {
+    padding: 0;
   }
 
-  // .slider__after
-
-  .slider__after {
+  picture:nth-child(1) {
+    width: 50%;
+    overflow: hidden;
+    grid-area: 1 / 1 / 1 / -1;
+    z-index: 2;
+    background-color: #eaeaea;
   }
 
-  // .slider__button
+  picture:nth-child(2) {
+    grid-area: 1 / 1 / 1 / -1;
+    z-index: 1;
+    background-color: #eaeaea;
+  }
 
   .slider__button {
     cursor: pointer;
@@ -21,10 +34,14 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: none;
     background-color: #ffffff;
-    position: relative;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .slider__button-svg {
       color: #666666;
@@ -42,11 +59,15 @@
       top: 50%;
       transform: translate(-50%, -50%);
       z-index: -1;
-      @include mediaTab {
+    }
+
+    @include mediaTab {
+      &::before {
         height: 512px;
-        z-index: 2;
+        z-index: -1;
       }
     }
+
     &::after {
       content: "";
       display: block;
@@ -54,7 +75,7 @@
       height: 40px;
       border-radius: 100%;
       outline: 2px solid #666666;
-      background-color: transparent;
+      background-color: #ffffff;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -66,22 +87,27 @@
       .slider__button-svg {
         color: #68b738;
       }
+
       &::before {
         background-color: #68b738;
       }
+
       &::after {
         outline: 2px solid #68b738;
       }
     }
+
     &:active {
       .slider__button-svg {
         color: #5eaa2f;
         opacity: 0.6;
       }
+
       &::before {
         background-color: #5eaa2f;
         opacity: 0.6;
       }
+
       &::after {
         outline: 2px solid #5eaa2f;
         opacity: 0.6;
@@ -94,7 +120,7 @@
 @include mediaTab {
   .slider {
     padding: 0;
-    margin: 0 auto;
+    padding-bottom: 101px;
     max-width: 560px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -105,24 +131,18 @@
       overflow: hidden;
       grid-area: 1 / 1 / 1 / -1;
       z-index: 2;
-      background: linear-gradient(#fff 136px, #eaeaea 136px);
+      background: linear-gradient(#ffffff 151px, #eaeaea 136px);
     }
+
     picture:nth-child(2) {
       grid-area: 1 / 1 / 1 / -1;
       z-index: 1;
-      background: linear-gradient(#fff 136px, #eaeaea 136px);
+      background: linear-gradient(#ffffff 151px, #eaeaea 136px);
     }
-
-    .slider__before {
-    }
-
-    // .slider__after
 
     .slider__after {
       z-index: 1;
     }
-
-    // .slider__button
 
     .slider__button {
       cursor: pointer;
@@ -132,11 +152,10 @@
       width: 40px;
       height: 40px;
       border-radius: 100%;
-      border: none;
       background-color: #ffffff;
       border: 2px solid #666666;
       position: absolute;
-      top: 50%;
+      top: 256px;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 4;
@@ -158,24 +177,18 @@
       overflow: hidden;
       grid-area: 1 / 1 / 1 / -1;
       z-index: 2;
-      background: linear-gradient(#fff 136px, #f2f2f2 136px);
+      background: linear-gradient(#ffffff 136px, #f2f2f2 136px);
     }
+
     picture:nth-child(2) {
       grid-area: 1 / 1 / 1 / -1;
       z-index: 1;
-      background: linear-gradient(#fff 136px, #f2f2f2 136px);
+      background: linear-gradient(#ffffff 136px, #f2f2f2 136px);
     }
-
-    .slider__before {
-    }
-
-    // .slider__after
 
     .slider__after {
       z-index: 1;
     }
-
-    // .slider__button
 
     .slider__button {
       cursor: pointer;
@@ -187,7 +200,6 @@
       border-radius: 100%;
       border: none;
       background-color: #ffffff;
-      position: relative;
       position: absolute;
       top: 236px;
       left: 50%;

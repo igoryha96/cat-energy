@@ -1,13 +1,20 @@
 .gift {
   padding-top: 58px;
-  background-image: url(../../images/catalog/cat-mob@1x.png);
+  background-image: url("../../images/catalog/cat-mob@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @include mediaTab {
-    background-image: url(../../images/catalog/cat-tab@1x.png);
-    padding: 57px 125px 60px 77px;
+    background-image: url("../../images/catalog/cat-tab@1x.png");
+    padding: 60px 125px 60px 77px;
+  }
+
+  @include mediaDesk {
+    background-image: url("../../images/catalog/cat-desk@1x.png");
+    height: fit-content;
+    margin-top: 117px;
+    padding: 57px 42px 43px;
   }
 
   // .gift__text
@@ -30,8 +37,14 @@
       width: 80px;
       height: 80px;
       background-color: #ffffff;
-      mask-image: url(../../icons/catalog/gift.svg);
+      mask-image: url("../../icons/catalog/gift.svg");
       margin-bottom: 48px;
+    }
+
+    @include mediaTab {
+      &::before {
+        margin-bottom: 0;
+      }
     }
 
     @include mediaTab {
@@ -39,10 +52,15 @@
       justify-content: space-between;
       align-items: center;
       padding: 0;
+      text-align: left;
+    }
 
-      &::before {
-        margin-bottom: 0;
-      }
+    @include mediaDesk {
+      text-align: center;
+      flex-direction: column;
+      gap: 49px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 }

@@ -2,13 +2,11 @@
   @include listReset;
   display: flex;
   margin: 0;
+  padding-top: 4px;
 
-  // .social__item
   .social__item {
-    padding: 20px 0;
+    padding: 16px 0;
   }
-
-  // .social__link
 
   .social__link {
     display: block;
@@ -18,12 +16,13 @@
 
   .social__link--vk {
     position: relative;
+
     &::before {
       content: "";
       width: 28px;
       height: 22px;
       position: absolute;
-      mask-image: url(../../icons/stack.svg#vk);
+      mask-image: url("../../icons/stack.svg#vk");
       background-color: #666666;
     }
 
@@ -31,18 +30,20 @@
     &:focus-visible::before {
       background-color: #68b738;
     }
+
     &:active::before {
       opacity: 0.3;
       background-color: #68b738;
     }
   }
+
   .social__link--youtube {
     &::before {
       content: "";
       width: 28px;
-      height: 22px;
+      height: 20px;
       position: absolute;
-      mask-image: url(../../icons/stack.svg#youtube);
+      mask-image: url("../../icons/stack.svg#youtube");
       background-color: #666666;
     }
 
@@ -50,25 +51,40 @@
     &:focus-visible::before {
       background-color: #68b738;
     }
+
     &:active::before {
       opacity: 0.3;
       background-color: #68b738;
     }
   }
+
   .social__link--tg {
     &::before {
       content: "";
       width: 28px;
       height: 22px;
       position: absolute;
-      mask-image: url(../../icons/stack.svg#tg);
+      mask-image: url("../../icons/stack.svg#tg");
       background-color: #666666;
+    }
+
+    @include mediaTab {
+      &::before {
+        height: 20px;
+      }
+    }
+
+    @include mediaDesk {
+      &::before {
+        height: 20px;
+      }
     }
 
     &:hover::before,
     &:focus-visible::before {
       background-color: #68b738;
     }
+
     &:active::before {
       opacity: 0.3;
       background-color: #68b738;

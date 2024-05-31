@@ -9,14 +9,15 @@
     align-items: center;
     height: 37px;
     color: #444444;
+
     @include text(lato, 16px, 20px);
 
     &::after {
       content: "";
       display: block;
-      height: 37px;
+      height: 34px;
       width: 27px;
-      mask-image: url(../../icons/logo-html.svg);
+      mask-image: url("../../icons/logo-html.svg");
       background-color: #666666;
       mask-size: 27px 34px;
       mask-repeat: no-repeat;
@@ -53,6 +54,7 @@
       gap: 23px;
       height: 37px;
       color: #444444;
+
       @include text(lato, 16px, 20px);
     }
   }

@@ -1,11 +1,18 @@
 .map {
-  display: flex;
   justify-content: center;
+  display: none;
+
+  &--nojs {
+    display: block;
+  }
+
+  @include mediaTab {
+    width: 768px;
+    margin: 0 auto;
+  }
   // .map__pic
 
   img {
     display: block;
-  }
-  .map__pic {
   }
 }

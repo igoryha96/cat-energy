@@ -5,9 +5,18 @@
   text-align: center;
   color: #ffffff;
   background-color: $main-decor;
-  min-width: 280px;
+  width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   .button--another {
     background-color: #f2f2f2;

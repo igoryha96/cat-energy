@@ -1,29 +1,78 @@
 .card-other {
-  // .card-other__title
+  border-bottom: solid 1px #cdcdcd;
+  padding-bottom: 19px;
+  margin-bottom: 12px;
 
   @include mediaTab {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-left: solid 1px #cdcdcd;
+    border-right: solid 1px #cdcdcd;
+    width: 708px;
+    margin-left: -39px;
+    padding: 26px 37px;
+    padding-top: 27px;
+    margin-bottom: 0;
+
+    &:first-child {
+      border-top: solid 1px #cdcdcd;
+    }
+  }
+
+  @include mediaDesk {
+    border: none;
+    border-bottom: solid 1px #cdcdcd;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    width: 896px;
+    display: grid;
+    grid-template-columns: 326px 285px 1fr;
+    align-items: center;
   }
 
   .card-other__title {
     @include text($Oswald, 16px, 16px);
     color: #222222;
+    font-weight: 400;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 14px;
 
     @include mediaTab {
       margin-right: auto;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @include mediaDesk {
+      margin: 0;
     }
   }
 
-  // .card-other__wrapper
-
   .card-other__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+
     @include mediaTab {
-      display: flex;
-      justify-content: space-between;
-      gap: 48px;
+      width: 310px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      justify-items: end;
+      gap: 22px;
+      padding-right: 3px;
+      padding-top: 3px;
+    }
+
+    @include mediaDesk {
+      margin: 0;
+      width: 320px;
+      justify-items: start;
+      padding-top: 8px;
     }
   }
 
@@ -33,12 +82,27 @@
     font-size: 14px;
     line-height: 14px;
     color: #444444;
+    margin: 0;
+
+    @include mediaTab {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
 .card-other__link {
   @include mediaTab {
+    margin-top: 8px;
     display: block;
     min-width: 100%;
+  }
+
+  @include mediaDesk {
+    margin: 0;
+    display: block;
+    min-width: auto;
+    width: 244px;
+    margin-left: auto;
   }
 }
