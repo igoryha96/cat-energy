@@ -1,6 +1,7 @@
 .description-feed {
   padding-top: 20px;
   padding-bottom: 23px;
+
   @include mediaTab {
     padding-top: 45px;
     padding-bottom: 6px;
@@ -13,6 +14,7 @@
     width: 320px;
     padding: 0 20px;
     margin: 0 auto;
+
     @include mediaTab {
       width: 768;
       padding: 0 30px;
@@ -24,6 +26,7 @@
   .description-feed__title {
     margin: 0;
     margin-bottom: 42px;
+
     @include mediaTab {
       margin-bottom: 72px;
     }
@@ -41,11 +44,11 @@
 
     @include mediaTab {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: row wrap;
       gap: 134px;
       row-gap: 37px;
     }
+
     @media (min-width: 400px) {
       row-gap: 37px;
     }
@@ -77,7 +80,7 @@
       width: 60px;
       height: 60px;
       background-color: $main-decor;
-      background-image: url(../../icons/stack.svg#plant);
+      background-image: url("../../icons/stack.svg#plant");
       background-size: 25px 28px;
       background-repeat: no-repeat;
       background-position: center;
@@ -91,19 +94,23 @@
       font-size: 16px;
       line-height: 24px;
       text-align: left;
+    }
+
+    @include mediaTab {
       &::before {
         content: "";
         display: block;
         width: 80px;
         height: 80px;
         background-color: $main-decor;
-        background-image: url(../../icons/stack.svg#plant);
+        background-image: url("../../icons/stack.svg#plant");
         background-size: 25px 28px;
         background-repeat: no-repeat;
         background-position: center;
         position: static;
         margin-bottom: 32px;
       }
+
       &::after {
         content: counter(number);
         font-family: $Oswald;
@@ -123,22 +130,24 @@
   .description-feed__text--chemistry {
     &::before {
       content: "";
-      background-image: url(../../icons/stack.svg#chemistry);
+      background-image: url("../../icons/stack.svg#chemistry");
       background-size: 25px 28px;
     }
   }
+
   .description-feed__text--tableware {
     &::before {
       content: "";
       background-color: $main-decor;
-      background-image: url(../../icons/stack.svg#Tableware);
+      background-image: url("../../icons/stack.svg#Tableware");
       background-size: 24px 30px;
     }
   }
+
   .description-feed__text--clock {
     &::before {
       content: "";
-      background-image: url(../../icons/stack.svg#clock);
+      background-image: url("../../icons/stack.svg#clock");
       background-size: 26px 31px;
     }
   }
@@ -153,12 +162,10 @@
     min-width: 100%;
     padding-top: 70px;
     padding-bottom: 29px;
+
     .description-feed__wrapper {
       width: 1440px;
       padding: 0 110px;
-    }
-
-    .description-feed__title {
     }
 
     .description-feed__list {

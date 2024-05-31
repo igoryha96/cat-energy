@@ -1,9 +1,8 @@
 .module {
   width: 124px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: 8px;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding-top: 13px;
@@ -11,12 +10,14 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   position: relative;
+
   @include mediaTab {
     width: 162px;
     position: relative;
     padding-top: 15px;
     padding-bottom: 7px;
   }
+
   @include mediaDesk {
     width: 162px;
     position: relative;
@@ -37,11 +38,13 @@
     position: absolute;
     z-index: 1;
     bottom: -16px;
+
     @include text($Lato, 12px, 12px);
     text-align: center;
     background-color: #eaeaea;
     max-width: 77px;
     margin: 0;
+
     @include mediaTab {
       font-size: 14px;
       line-height: 14px;
@@ -66,6 +69,7 @@
       background-color: #ffffff;
     }
   }
+
   @include mediaDesk {
     .module__descriprion {
       @include text($Lato, 14px, 14px);

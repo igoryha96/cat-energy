@@ -18,6 +18,7 @@
 
   .location__advert {
     margin: 0;
+
     @include text($Oswald, 16px, 20px);
     color: #000000;
     text-transform: uppercase;
@@ -30,11 +31,6 @@
     @include text($Lato, 14px, 20px);
     font-style: normal;
   }
-
-  // .location__map
-
-  .location__map {
-  }
 }
 
 //Media
@@ -42,6 +38,7 @@
 @include mediaTab {
   .location {
     margin: 0 auto;
+
     .location__wrapper {
       width: 768px;
       margin: 0 auto;
@@ -67,9 +64,6 @@
       flex-direction: column;
       justify-content: space-between;
     }
-
-    .location__map {
-    }
   }
 }
 
@@ -94,17 +88,11 @@
       top: 95px;
     }
 
-    .location__advert {
-    }
-
     .location__adress {
       text-align: start;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
-
-    .location__map {
     }
   }
 }

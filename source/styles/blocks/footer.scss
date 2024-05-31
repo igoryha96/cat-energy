@@ -7,6 +7,7 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
+
     a {
       @include linkReset;
     }
@@ -14,9 +15,10 @@
 
   // .footer__pic-logo
 
-  .footer_logo-wrap {
-    padding: 20px 0;
+  .footer__logo-wrap {
+    padding: 18px 0;
     position: relative;
+
     &::after {
       content: "";
       display: block;
@@ -32,22 +34,9 @@
     &:hover {
       opacity: 0.8;
     }
+
     &:active {
       opacity: 0.6;
-    }
-  }
-
-  // .footer__social
-  .footer_logo-wrap {
-    padding: 18px 0;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      width: 280px;
-      border-bottom: solid 1px #d9d9d9;
-      left: -76px;
-      bottom: 0;
     }
   }
 
@@ -56,6 +45,7 @@
     justify-content: space-between;
     gap: 24px;
     position: relative;
+
     &::after {
       content: "";
       display: block;
@@ -81,20 +71,23 @@
 @include mediaTab {
   .footer {
     width: 100%;
+
     .footer__wrapper {
       padding: 55px 30px;
       flex-direction: row;
       width: 768px;
       margin: 0 auto;
+
       a {
         @include linkReset;
       }
     }
 
-    .footer_logo-wrap {
+    .footer__logo-wrap {
       padding: 0;
       position: relative;
       margin-right: 160px;
+
       &::after {
         content: "";
         display: none;
@@ -105,6 +98,7 @@
       &:hover {
         opacity: 0.8;
       }
+
       &:active {
         opacity: 0.6;
       }
@@ -119,6 +113,7 @@
 
     .footer__academy {
       margin-left: auto;
+
       a {
         @include linkReset;
       }
@@ -130,20 +125,23 @@
   .footer {
     width: 100%;
     margin: 0 auto;
+
     .footer__wrapper {
       margin: 0 auto;
       width: 1440px;
       padding: 66px 110px;
       flex-direction: row;
+
       a {
         @include linkReset;
       }
     }
 
-    .footer_logo-wrap {
+    .footer__logo-wrap {
       padding: 0;
       position: relative;
       margin-right: 416px;
+
       &::after {
         content: "";
         display: none;
@@ -154,6 +152,7 @@
       &:hover {
         opacity: 0.8;
       }
+
       &:active {
         opacity: 0.6;
       }

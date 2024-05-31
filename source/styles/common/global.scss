@@ -7,14 +7,12 @@
 
 .wrapper {
   padding: 0 20px;
+
   @include mediaTab {
     padding: 0 30px;
   }
+
   @include mediaDesk {
     padding: 0 110px;
   }
 }
-
-// * {
-//   outline: solid blue 2px;
-// }

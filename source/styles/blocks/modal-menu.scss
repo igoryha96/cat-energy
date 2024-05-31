@@ -2,6 +2,7 @@
   font-family: $Oswald;
   font-size: 20px;
   color: #000000;
+
   @media (max-width: 320px) {
     background-color: #ffffff;
   }
@@ -64,9 +65,11 @@
     .modal-menu__link {
       padding-top: 6px;
       padding-bottom: 6px;
+
       &--current-catalog {
         border-bottom: 1px solid #68b738;
       }
+
       &--current-index {
         border-bottom: 1px solid #68b738;
       }
@@ -104,11 +107,13 @@
       &--current-index {
         border-bottom: 1px solid #ffffff;
         padding-top: 1px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
       }
+
       &--current-catalog {
         padding-top: 0;
       }
+
       a {
         @include linkReset;
         text-transform: uppercase;
@@ -126,14 +131,16 @@
         &:focus-visible {
           opacity: 0.6;
         }
+
         &:active {
           opacity: 0.3;
         }
       }
-      &--catalog {
-        a {
-          color: #111111;
-        }
+    }
+
+    .modal-menu__link--catalog {
+      a {
+        color: #111111;
       }
     }
 

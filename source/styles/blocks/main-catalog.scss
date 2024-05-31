@@ -1,9 +1,11 @@
 .main-catalog {
   width: 100%;
   margin-top: 15px;
+
   @include mediaTab {
     margin-top: 61px;
   }
+
   @include mediaDesk {
     margin-top: 44px;
   }
@@ -21,6 +23,7 @@
       width: 768px;
       padding: 0 30px;
     }
+
     @include mediaDesk {
       width: 1440px;
       padding: 0 110px;
@@ -29,27 +32,30 @@
 
   .main-catalog__title {
     margin-bottom: 41px;
+
     @include mediaTab {
       margin-bottom: 165px;
     }
+
     @include mediaDesk {
       margin-bottom: 165px;
     }
   }
+
   .main-catalog__list {
     @include listReset;
     margin-bottom: 50px;
+
     @include mediaTab {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      row-gap: 140px;
-      column-gap: 60px;
+      gap: 140px 60px;
       margin-bottom: 73px;
     }
+
     @include mediaDesk {
       grid-template-columns: repeat(4, 1fr);
-      row-gap: 144px;
-      column-gap: 80px;
+      gap: 144px 80px;
     }
   }
 
@@ -58,6 +64,7 @@
       max-width: 324px;
       margin: 0;
     }
+
     @include mediaDesk {
       max-width: 245px;
     }
@@ -71,12 +78,14 @@
       column-gap: 80px;
     }
   }
+
   .main-catalog__catalog-other {
     margin-bottom: 2px;
   }
 
   .main-catalog__gift {
     margin-bottom: 40px;
+
     @include mediaTab {
       margin-bottom: 2px;
     }

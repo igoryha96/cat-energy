@@ -4,6 +4,7 @@
   padding: 0 20px;
   padding-top: 24px;
   padding-bottom: 22px;
+
   @media (min-width: $tablet) {
     padding: 77px 316px 53px 52px;
     position: relative;
@@ -33,18 +34,25 @@
       border-radius: 100%;
       background-color: $main-decor;
     }
+
     &::after {
       content: "";
       display: block;
       width: 36px;
       height: 50px;
-      background-image: url(../../icons/cat-slim.svg);
+      background-image: url("../../icons/cat-slim.svg");
       position: absolute;
       left: 6px;
       bottom: 3px;
     }
 
     @media (min-width: $tablet) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
+
+    @include mediaTab {
       &::before {
         content: "";
         position: absolute;
@@ -63,9 +71,6 @@
         left: 422px;
         top: -8px;
       }
-      font-size: 36px;
-      line-height: 36px;
-      margin-bottom: 24px;
     }
   }
 
@@ -75,7 +80,7 @@
       display: block;
       width: 67px;
       height: 28px;
-      background-image: url(../../icons/cat-mass.svg);
+      background-image: url("../../icons/cat-mass.svg");
       position: absolute;
       left: -8px;
       bottom: 9px;
@@ -96,6 +101,7 @@
     max-width: 227px;
     margin: 0;
     margin-bottom: 23px;
+
     @media (min-width: $tablet) {
       font-size: 16px;
       line-height: 24px;
@@ -113,6 +119,7 @@
     font-family: $Oswald;
     font-size: 16px;
     line-height: 16px;
+
     @include linkReset;
     padding-top: 17px;
     border-top: 1px solid #d9d9d9;
@@ -122,7 +129,7 @@
       display: block;
       width: 24;
       height: 12px;
-      mask-image: url(../../icons/stack.svg#arrow);
+      mask-image: url("../../icons/stack.svg#arrow");
       background-color: #000000;
     }
 
@@ -133,7 +140,7 @@
         display: block;
         width: 62;
         height: 12px;
-        mask-image: url(../../icons/stack.svg#arrow-big);
+        mask-image: url("../../icons/stack.svg#arrow-big");
         background-color: #000000;
       }
     }
@@ -156,6 +163,7 @@
 
     .card-program__title {
       margin: 0;
+
       &::before {
         content: "";
         position: absolute;
@@ -203,12 +211,15 @@
         font-size: 20px;
         padding-top: 10px;
         border: none;
+      }
+
+      @include mediaTab {
         &::after {
           content: "";
           display: block;
           width: 45px;
           height: 9px;
-          mask-image: url(../../icons/stack.svg#arrow-big);
+          mask-image: url("../../icons/stack.svg#arrow-big");
           background-color: #000000;
         }
       }
@@ -277,6 +288,7 @@
       font-family: $Oswald;
       font-size: 20px;
       line-height: 16px;
+
       @include linkReset;
     }
   }

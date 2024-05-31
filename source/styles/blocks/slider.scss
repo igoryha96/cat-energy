@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
+
   @media (max-width: 320px) {
     padding: 0;
   }
@@ -19,23 +20,12 @@
     z-index: 2;
     background-color: #eaeaea;
   }
+
   picture:nth-child(2) {
     grid-area: 1 / 1 / 1 / -1;
     z-index: 1;
     background-color: #eaeaea;
   }
-
-  // .slider__before
-
-  .slider__before {
-  }
-
-  // .slider__after
-
-  .slider__after {
-  }
-
-  // .slider__button
 
   .slider__button {
     cursor: pointer;
@@ -69,11 +59,15 @@
       top: 50%;
       transform: translate(-50%, -50%);
       z-index: -1;
-      @include mediaTab {
+    }
+
+    @include mediaTab {
+      &::before {
         height: 512px;
         z-index: -1;
       }
     }
+
     &::after {
       content: "";
       display: block;
@@ -93,22 +87,27 @@
       .slider__button-svg {
         color: #68b738;
       }
+
       &::before {
         background-color: #68b738;
       }
+
       &::after {
         outline: 2px solid #68b738;
       }
     }
+
     &:active {
       .slider__button-svg {
         color: #5eaa2f;
         opacity: 0.6;
       }
+
       &::before {
         background-color: #5eaa2f;
         opacity: 0.6;
       }
+
       &::after {
         outline: 2px solid #5eaa2f;
         opacity: 0.6;
@@ -134,22 +133,16 @@
       z-index: 2;
       background: linear-gradient(#ffffff 151px, #eaeaea 136px);
     }
+
     picture:nth-child(2) {
       grid-area: 1 / 1 / 1 / -1;
       z-index: 1;
       background: linear-gradient(#ffffff 151px, #eaeaea 136px);
     }
 
-    .slider__before {
-    }
-
-    // .slider__after
-
     .slider__after {
       z-index: 1;
     }
-
-    // .slider__button
 
     .slider__button {
       cursor: pointer;
@@ -159,7 +152,6 @@
       width: 40px;
       height: 40px;
       border-radius: 100%;
-      border: none;
       background-color: #ffffff;
       border: 2px solid #666666;
       position: absolute;
@@ -185,24 +177,18 @@
       overflow: hidden;
       grid-area: 1 / 1 / 1 / -1;
       z-index: 2;
-      background: linear-gradient(#fff 136px, #f2f2f2 136px);
+      background: linear-gradient(#ffffff 136px, #f2f2f2 136px);
     }
+
     picture:nth-child(2) {
       grid-area: 1 / 1 / 1 / -1;
       z-index: 1;
-      background: linear-gradient(#fff 136px, #f2f2f2 136px);
+      background: linear-gradient(#ffffff 136px, #f2f2f2 136px);
     }
-
-    .slider__before {
-    }
-
-    // .slider__after
 
     .slider__after {
       z-index: 1;
     }
-
-    // .slider__button
 
     .slider__button {
       cursor: pointer;
@@ -214,7 +200,6 @@
       border-radius: 100%;
       border: none;
       background-color: #ffffff;
-      position: relative;
       position: absolute;
       top: 236px;
       left: 50%;

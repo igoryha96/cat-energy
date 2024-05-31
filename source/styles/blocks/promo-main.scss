@@ -22,7 +22,7 @@
     margin-bottom: 25px;
     text-align: center;
     line-height: 36px;
-    font-weight: normal;
+    font-weight: 400;
   }
 
   .promo-main__text {
@@ -34,27 +34,24 @@
     text-transform: uppercase;
   }
 
-  .promo-main__img {
-  }
-
-  .promo-main__pic {
-  }
-
   .promo-main__link {
     @include linkReset;
     background-color: $main-decor;
     color: #ffffff;
     display: block;
     width: 280px;
+
     @include text($Oswald, 16px, 20px);
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
     padding: 10px;
+
     &:hover,
     &:focus-visible {
       background-color: #5eaa2f;
     }
+
     &:active {
       background-color: #5eaa2f;
     }
@@ -101,11 +98,9 @@
       z-index: -1;
     }
 
-    .promo-main__pic {
-    }
-
     .promo-main__link {
       margin-left: 120px;
+
       @include text($Oswald, 20px, 26px);
       padding: 14px 26px;
       width: 246px;
@@ -126,9 +121,8 @@
 
     .promo-main__title {
       font-size: 60px;
-      text-align: center;
       line-height: 60px;
-      font-weight: normal;
+      font-weight: 400;
       text-align: left;
       margin: 0;
       margin-bottom: 40px;
@@ -150,9 +144,6 @@
       top: -81px;
     }
 
-    .promo-main__pic {
-    }
-
     .promo-main__link {
       @include linkReset;
       background-color: $main-decor;
@@ -160,6 +151,7 @@
       display: block;
       width: 244px;
       height: 54px;
+
       @include text($Oswald, 20px, 26px);
       text-transform: uppercase;
       text-align: center;

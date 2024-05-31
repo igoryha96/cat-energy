@@ -16,12 +16,13 @@
 
   .social__link--vk {
     position: relative;
+
     &::before {
       content: "";
       width: 28px;
       height: 22px;
       position: absolute;
-      mask-image: url(../../icons/stack.svg#vk);
+      mask-image: url("../../icons/stack.svg#vk");
       background-color: #666666;
     }
 
@@ -29,18 +30,20 @@
     &:focus-visible::before {
       background-color: #68b738;
     }
+
     &:active::before {
       opacity: 0.3;
       background-color: #68b738;
     }
   }
+
   .social__link--youtube {
     &::before {
       content: "";
       width: 28px;
       height: 20px;
       position: absolute;
-      mask-image: url(../../icons/stack.svg#youtube);
+      mask-image: url("../../icons/stack.svg#youtube");
       background-color: #666666;
     }
 
@@ -48,23 +51,31 @@
     &:focus-visible::before {
       background-color: #68b738;
     }
+
     &:active::before {
       opacity: 0.3;
       background-color: #68b738;
     }
   }
+
   .social__link--tg {
     &::before {
       content: "";
       width: 28px;
       height: 22px;
       position: absolute;
-      mask-image: url(../../icons/stack.svg#tg);
+      mask-image: url("../../icons/stack.svg#tg");
       background-color: #666666;
-      @include mediaTab {
+    }
+
+    @include mediaTab {
+      &::before {
         height: 20px;
       }
-      @include mediaDesk {
+    }
+
+    @include mediaDesk {
+      &::before {
         height: 20px;
       }
     }
@@ -73,6 +84,7 @@
     &:focus-visible::before {
       background-color: #68b738;
     }
+
     &:active::before {
       opacity: 0.3;
       background-color: #68b738;
