@@ -3,6 +3,10 @@
   width: 100%;
   z-index: 1;
 
+  &--no-js-map {
+    display: none;
+  }
+
   @include mediaTab {
     height: 400px;
   }

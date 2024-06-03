@@ -34,6 +34,7 @@
     border: none;
     margin-right: -3px;
     margin-bottom: 3px;
+    display: block;
 
     &:hover,
     &:focus-visible {
@@ -51,6 +52,10 @@
     &--closed {
       background-image: url("../../icons/menu.svg");
     }
+
+    &--nojs {
+      display: none;
+    }
   }
 }
 
@@ -64,9 +69,10 @@
     padding-bottom: 0;
 
     .main-header__wrap-heder-menu {
-      display: flex;
+      display: grid;
+      grid-template-columns: 174px 1fr;
       gap: 94px;
-      align-items: center;
+      align-items: start;
     }
 
     .main-header__wrapper {
@@ -99,12 +105,16 @@
       720px 694px;
 
     .main-header__wrap-heder-menu {
-      display: flex;
-      flex-direction: row;
+      // display: flex;
+      // flex-direction: row;
+      display: grid;
+      grid-template-columns: 202px 1fr;
+      gap: 540px;
+      align-items: start;
       width: 1440px;
       margin: 0 auto;
       margin-bottom: 110px;
-      gap: 540px;
+
 
       &--catalog {
         margin-bottom: 0;

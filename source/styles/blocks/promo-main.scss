@@ -8,7 +8,7 @@
   background-position: top;
   background-repeat: no-repeat;
 
-  .main-header__bacground-promo {
+  .promo-main__bacground-promo {
     @media (max-width: 320px) {
       display: flex;
       flex-direction: column;
@@ -68,7 +68,7 @@
     padding-bottom: 526px;
     padding-top: 61px;
 
-    .main-header__bacground-promo {
+    .promo-main__bacground-promo {
       background-color: transparent;
     }
 

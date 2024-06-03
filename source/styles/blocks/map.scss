@@ -10,6 +10,11 @@
     width: 768px;
     margin: 0 auto;
   }
+
+  @include mediaDesk {
+    width: 1440px;
+    margin: 0 auto;
+  }
   // .map__pic
 
   img {
