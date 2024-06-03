@@ -1,17 +1,17 @@
 .gift {
   padding-top: 58px;
-  background-image: url("../../images/catalog/cat-mob@1x.png");
+  background-image: url("../../images/catalog/cat-mob@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @include mediaTab {
-    background-image: url("../../images/catalog/cat-tab@1x.png");
+    background-image: url("../../images/catalog/cat-tab@1x.jpg");
     padding: 60px 125px 60px 77px;
   }
 
   @include mediaDesk {
-    background-image: url("../../images/catalog/cat-desk@1x.png");
+    background-image: url("../../images/catalog/cat-desk@1x.jpg");
     height: fit-content;
     margin-top: 117px;
     padding: 57px 42px 43px;
