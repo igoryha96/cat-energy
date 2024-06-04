@@ -29,7 +29,8 @@
     padding-bottom: 17px;
     width: 896px;
     display: grid;
-    grid-template-columns: 326px 285px 1fr;
+    grid-template-columns: 306px 285px 1fr;
+    gap: 20px;
     align-items: center;
   }
 
@@ -41,6 +42,7 @@
     margin: 0;
     margin-bottom: 14px;
 
+
     @include mediaTab {
       margin-right: auto;
       font-size: 20px;
@@ -49,6 +51,8 @@
 
     @include mediaDesk {
       margin: 0;
+      grid-column: 1 / 2;
+      width: 320px;
     }
   }
 
