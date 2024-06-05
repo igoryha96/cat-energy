@@ -8,130 +8,130 @@
     padding-top: 26px;
     margin-bottom: 103px;
   }
+}
 
-  .subscribe__title {
-    @include text($Oswald, 24px, 24px);
-    font-weight: 400;
-    color: #000000;
+.subscribe__title {
+  @include text($Oswald, 24px, 24px);
+  font-weight: 400;
+  color: #000000;
+  display: block;
+  margin: 0;
+  margin-bottom: 33px;
+  position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow:
+    -40px 0 #ffffff,
+    40px 0 #ffffff;
+
+  &::before {
+    content: "";
+    z-index: -1;
+    background-color: #68b738;
+    width: 100vw;
+    height: 2px;
     display: block;
-    margin: 0;
-    margin-bottom: 33px;
-    position: relative;
-    width: fit-content;
-    background-color: #ffffff;
-    box-shadow:
-      -40px 0 #ffffff,
-      40px 0 #ffffff;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    box-shadow: 100vw 0 #68b738;
+  }
 
+  @include mediaDesk {
     &::before {
-      content: "";
-      z-index: -1;
-      background-color: #68b738;
-      width: 100vw;
-      height: 2px;
-      display: block;
-      position: absolute;
-      top: 11px;
-      right: 0;
-      box-shadow: 100vw 0 #68b738;
-    }
-
-    @include mediaDesk {
-      &::before {
-        top: 17px;
-      }
-    }
-
-    @include mediaTab {
-      font-size: 32px;
-      line-height: 32px;
-      margin-bottom: 66px;
-    }
-
-    @include mediaDesk {
-      font-size: 40px;
-      line-height: 40px;
-      margin-bottom: 72px;
+      top: 17px;
     }
   }
 
-  .subscribe__text {
-    @include text($Oswald, 16px, 24px);
-    color: #000000;
-    display: block;
+  @include mediaTab {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 66px;
+  }
+
+  @include mediaDesk {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+  }
+}
+
+.subscribe__text {
+  @include text($Oswald, 16px, 24px);
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @include mediaTab {
     text-align: center;
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: 24px;
-
-    @include mediaTab {
-      text-align: center;
-      font-size: 24px;
-      line-height: 32px;
-      margin-bottom: 24px;
-    }
-
-    @include mediaDesk {
-      margin-bottom: 22px;
-    }
   }
 
-  .subscribe__wrap-inp-btn {
-    @include mediaTab {
-      display: flex;
-    }
+  @include mediaDesk {
+    margin-bottom: 22px;
+  }
+}
 
-    @include mediaDesk {
-      margin: 0 auto;
-      justify-content: center;
-    }
+.subscribe__wrap-inp-btn {
+  @include mediaTab {
+    display: flex;
   }
 
-  .subscribe__input {
-    @include text($Oswald, 20px, 20px);
-    border: 1px solid #e7e7e7;
-    color: #444444;
-    text-transform: uppercase;
-    min-width: 280px;
+  @include mediaDesk {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+.subscribe__input {
+  @include text($Oswald, 20px, 20px);
+  border: 1px solid #e7e7e7;
+  color: #444444;
+  text-transform: uppercase;
+  min-width: 280px;
+  padding: 13px;
+  margin-bottom: 16px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #444444;
+  }
+
+  &:not(:placeholder-shown):not(:focus-visible):invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  @include mediaTab {
+    width: 376px;
+    margin: 0;
+    padding: 10px;
+  }
+
+  @include mediaDesk {
+    width: 496px;
     padding: 13px;
-    margin-bottom: 16px;
+  }
+}
 
-    &:hover {
-      outline: 1px solid #cdcdcd;
-    }
+.subscribe__button {
+  @include text($Oswald, 20px, 26px);
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-    &:focus-visible {
-      outline: 2px solid #444444;
-    }
-
-    &:not(:placeholder-shown):not(:focus-visible):invalid {
-      outline: 2px solid #ff8282;
-    }
-
-    @include mediaTab {
-      width: 376px;
-      margin: 0;
-      padding: 10px;
-    }
-
-    @include mediaDesk {
-      width: 496px;
-      padding: 13px;
-    }
+  @include mediaTab {
+    padding: 15 26px;
+    width: 256px;
   }
 
-  .subscribe__button {
-    @include text($Oswald, 20px, 26px);
-    border: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    @include mediaTab {
-      padding: 15 26px;
-      width: 256px;
-    }
-
-    @include mediaDesk {
-      padding: 15 26px;
-      width: 256px;
-    }
+  @include mediaDesk {
+    padding: 15 26px;
+    width: 256px;
   }
 }

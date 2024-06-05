@@ -13,81 +13,82 @@
   img {
     display: block;
   }
+}
 
-  .main-catalog__wrapper {
-    width: 320px;
-    padding: 0 20px;
+.main-catalog__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+
+  @include mediaTab {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @include mediaDesk {
+    width: 1440px;
+    padding: 0 110px;
+  }
+}
+
+.main-catalog__title {
+  margin-bottom: 41px;
+
+  @include mediaTab {
+    margin-bottom: 165px;
+  }
+
+  @include mediaDesk {
+    margin-bottom: 165px;
+  }
+}
+
+.main-catalog__list {
+  @include listReset;
+  margin-bottom: 50px;
+
+  @include mediaTab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 140px 60px;
+    margin-bottom: 73px;
+  }
+
+  @include mediaDesk {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 144px 80px;
+  }
+}
+
+.main-catalog__item {
+  @include mediaTab {
+    max-width: 324px;
+    margin: 0;
+  }
+
+  @include mediaDesk {
+    max-width: 245px;
+  }
+}
+
+.main-catalog__wrapper-other-gift {
+  @include mediaDesk {
     margin: 0 auto;
-
-    @include mediaTab {
-      width: 768px;
-      padding: 0 30px;
-    }
-
-    @include mediaDesk {
-      width: 1440px;
-      padding: 0 110px;
-    }
+    display: grid;
+    grid-template-columns: 896px 245px;
+    column-gap: 80px;
   }
+}
 
-  .main-catalog__title {
-    margin-bottom: 41px;
+.main-catalog__catalog-other {
+  margin-bottom: 2px;
+}
 
-    @include mediaTab {
-      margin-bottom: 165px;
-    }
+.main-catalog__gift {
+  margin-bottom: 40px;
 
-    @include mediaDesk {
-      margin-bottom: 165px;
-    }
-  }
-
-  .main-catalog__list {
-    @include listReset;
-    margin-bottom: 50px;
-
-    @include mediaTab {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 140px 60px;
-      margin-bottom: 73px;
-    }
-
-    @include mediaDesk {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 144px 80px;
-    }
-  }
-
-  .main-catalog__item {
-    @include mediaTab {
-      max-width: 324px;
-      margin: 0;
-    }
-
-    @include mediaDesk {
-      max-width: 245px;
-    }
-  }
-
-  .main-catalog__wrapper-other-gift {
-    @include mediaDesk {
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 896px 245px;
-      column-gap: 80px;
-    }
-  }
-
-  .main-catalog__catalog-other {
+  @include mediaTab {
     margin-bottom: 2px;
-  }
-
-  .main-catalog__gift {
-    margin-bottom: 40px;
-
-    @include mediaTab {
-      margin-bottom: 2px;
-    }
   }
 }

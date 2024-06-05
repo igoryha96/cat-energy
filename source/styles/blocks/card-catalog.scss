@@ -29,129 +29,129 @@
     padding: 150px 30px 40px;
     background-color: #f2f2f2;
   }
+}
 
-  dl {
+dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 140px;
+
+  dd {
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 140px;
-
-    dd {
-      margin: 0;
-      text-align: right;
-    }
-
-    dt {
-      margin: 0;
-    }
-
-    @include mediaTab {
-      width: 250px;
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: -3px;
-    }
-
-    @include mediaTab {
-      * {
-        padding: 5px 0;
-        border-bottom: 1px solid #cdcdcd;
-      }
-    }
-
-    @include mediaDesk {
-      width: 169px;
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: -3px;
-    }
-  }
-  // .card-catalog__content
-
-  .card-catalog__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include mediaTab {
-      position: absolute;
-      top: -71px;
-      width: 200px;
-      height: 210px;
-    }
-
-    @include mediaDesk {
-      width: 169px;
-      height: 210px;
-      position: absolute;
-      top: -71px;
-      left: 35px;
-    }
-
-    @include mediaDesk {
-      picture {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 169px;
-        height: 210px;
-      }
-    }
+    text-align: right;
   }
 
-  .card-catalog__description {
-    @include text($Lato, 12px, 16px);
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-
-    @include mediaTab {
-      align-items: center;
-      margin-bottom: 20px;
-      gap: 16px;
-    }
-
-    @include mediaDesk {
-      gap: 21px;
-      margin-bottom: 24px;
-    }
+  dt {
+    margin: 0;
   }
 
-  .card-catalog__title {
-    @include text($Oswald, 16px, 20px);
-    @include linkReset;
-    width: 76px;
-    color: #222222;
-    text-transform: uppercase;
-
-    @include mediaTab {
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      width: 135px;
-    }
-
-    @include mediaDesk {
-      margin-left: -2px;
-    }
-  }
-
-  .card-catalog__link {
+  @include mediaTab {
+    width: 250px;
     font-size: 16px;
-    width: 100%;
-    height: 40px;
-    grid-column: 1 /-1;
+    line-height: 20px;
+    margin-bottom: -3px;
+  }
 
-    @include mediaTab {
-      display: block;
-      width: 250px;
-      font-size: 16px;
-      line-height: 20px;
+  @include mediaTab {
+    * {
+      padding: 5px 0;
+      border-bottom: 1px solid #cdcdcd;
     }
+  }
 
-    @include mediaDesk {
+  @include mediaDesk {
+    width: 169px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: -3px;
+  }
+}
+// .card-catalog__content
+
+.card-catalog__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mediaTab {
+    position: absolute;
+    top: -71px;
+    width: 200px;
+    height: 210px;
+  }
+
+  @include mediaDesk {
+    width: 169px;
+    height: 210px;
+    position: absolute;
+    top: -71px;
+    left: 35px;
+  }
+
+  @include mediaDesk {
+    picture {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       width: 169px;
+      height: 210px;
     }
+  }
+}
+
+.card-catalog__description {
+  @include text($Lato, 12px, 16px);
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @include mediaTab {
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 16px;
+  }
+
+  @include mediaDesk {
+    gap: 21px;
+    margin-bottom: 24px;
+  }
+}
+
+.card-catalog__title {
+  @include text($Oswald, 16px, 20px);
+  @include linkReset;
+  width: 76px;
+  color: #222222;
+  text-transform: uppercase;
+
+  @include mediaTab {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 135px;
+  }
+
+  @include mediaDesk {
+    margin-left: -2px;
+  }
+}
+
+.card-catalog__link {
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  grid-column: 1 /-1;
+
+  @include mediaTab {
+    display: block;
+    width: 250px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include mediaDesk {
+    width: 169px;
   }
 }

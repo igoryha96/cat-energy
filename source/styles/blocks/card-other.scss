@@ -33,65 +33,65 @@
     gap: 20px;
     align-items: center;
   }
+}
 
-  .card-other__title {
-    @include text($Oswald, 16px, 16px);
-    color: #222222;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 14px;
+.card-other__title {
+  @include text($Oswald, 16px, 16px);
+  color: #222222;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
 
 
-    @include mediaTab {
-      margin-right: auto;
-      font-size: 20px;
-      line-height: 20px;
-    }
-
-    @include mediaDesk {
-      margin: 0;
-      grid-column: 1 / 2;
-      width: 320px;
-    }
+  @include mediaTab {
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 20px;
   }
 
-  .card-other__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 14px;
+  @include mediaDesk {
+    margin: 0;
+    grid-column: 1 / 2;
+    width: 320px;
+  }
+}
 
-    @include mediaTab {
-      width: 310px;
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      justify-items: end;
-      gap: 22px;
-      padding-right: 3px;
-      padding-top: 3px;
-    }
+.card-other__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
 
-    @include mediaDesk {
-      margin: 0;
-      width: 320px;
-      justify-items: start;
-      padding-top: 8px;
-    }
+  @include mediaTab {
+    width: 310px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: end;
+    gap: 22px;
+    padding-right: 3px;
+    padding-top: 3px;
   }
 
-  // .card-other__text
-
-  .card-other__text {
-    font-size: 14px;
-    line-height: 14px;
-    color: #444444;
+  @include mediaDesk {
     margin: 0;
+    width: 320px;
+    justify-items: start;
+    padding-top: 8px;
+  }
+}
 
-    @include mediaTab {
-      font-size: 16px;
-      line-height: 20px;
-    }
+// .card-other__text
+
+.card-other__text {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+
+  @include mediaTab {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

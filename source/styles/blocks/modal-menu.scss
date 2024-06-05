@@ -7,25 +7,6 @@
     background-color: #ffffff;
   }
 
-  .modal-menu__list {
-    @include listReset;
-    margin: 0;
-  }
-
-  .modal-menu__link {
-    a {
-      @include linkReset;
-      text-transform: uppercase;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-top: 1px solid #e6e6e6;
-      padding-top: 22px;
-      padding-bottom: 22px;
-    }
-  }
-
   @media (max-width: 320px) {
     &--closed {
       display: none;
@@ -44,6 +25,25 @@
   }
 }
 
+.modal-menu__list {
+  @include listReset;
+  margin: 0;
+}
+
+.modal-menu__link {
+  a {
+    @include linkReset;
+    text-transform: uppercase;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
 // Media Tab
 @include mediaTab {
   .modal-menu {
@@ -53,38 +53,38 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
 
-    .modal-menu__list {
-      @include listReset;
-      margin: 0;
-      flex-wrap: wrap;
-      display: flex;
-      gap: 33px;
-      align-items: center;
-      padding-top: 8px;
+  .modal-menu__list {
+    @include listReset;
+    margin: 0;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 33px;
+    align-items: center;
+    padding-top: 8px;
+  }
+
+  .modal-menu__link {
+    padding-top: 6px;
+    padding-bottom: 7px;
+
+    &--current-catalog {
+      border-bottom: 1px solid #68b738;
+      padding-bottom: 7px;
     }
 
-    .modal-menu__link {
-      padding-top: 6px;
-      padding-bottom: 7px;
+    &--current-index {
+      border-bottom: 1px solid #68b738;
+    }
 
-      &--current-catalog {
-        border-bottom: 1px solid #68b738;
-        padding-bottom: 7px;
-      }
-
-      &--current-index {
-        border-bottom: 1px solid #68b738;
-      }
-
-      a {
-        @include linkReset;
-        text-transform: uppercase;
-        border: none;
-        padding: 0;
-        font-size: 18px;
-        line-height: 24px;
-      }
+    a {
+      @include linkReset;
+      text-transform: uppercase;
+      border: none;
+      padding: 0;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 }
@@ -97,62 +97,62 @@
     font-size: 20px;
     color: #000000;
     gap: 33px;
+  }
 
-    .modal-menu__list {
-      @include listReset;
-      margin: 0;
-      gap: 32px;
-      max-width: 475px;
-      flex-wrap: wrap;
-      padding-top: 3px;
+  .modal-menu__list {
+    @include listReset;
+    margin: 0;
+    gap: 32px;
+    max-width: 475px;
+    flex-wrap: wrap;
+    padding-top: 3px;
+  }
+
+  .modal-menu__link {
+    &--current-index {
+      border-bottom: 1px solid #ffffff;
+      padding-top: 1px;
+      padding-bottom: 0;
     }
 
-    .modal-menu__link {
-      &--current-index {
-        border-bottom: 1px solid #ffffff;
-        padding-top: 1px;
-        padding-bottom: 0;
-      }
-
-      &--current-catalog {
-        padding-top: 0;
-        padding-bottom: 1px;
-      }
-
-      a {
-        @include linkReset;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-top: none;
-        padding-top: 11px;
-        padding-bottom: 10px;
-        color: #ffffff;
-        line-height: 20px;
-        font-size: 20px;
-
-        &:hover,
-        &:focus-visible {
-          opacity: 0.6;
-        }
-
-        &:active {
-          opacity: 0.3;
-        }
-      }
+    &--current-catalog {
+      padding-top: 0;
+      padding-bottom: 1px;
     }
 
-    .modal-menu__link--catalog {
-      a {
-        color: #111111;
+    a {
+      @include linkReset;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: none;
+      padding-top: 11px;
+      padding-bottom: 10px;
+      color: #ffffff;
+      line-height: 20px;
+      font-size: 20px;
+
+      &:hover,
+      &:focus-visible {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
       }
     }
+  }
 
-    .--catalog-link {
-      a {
-        color: #111111;
-      }
+  .modal-menu__link--catalog {
+    a {
+      color: #111111;
+    }
+  }
+
+  .--catalog-link {
+    a {
+      color: #111111;
     }
   }
 }

@@ -9,87 +9,87 @@
     padding-top: 50px;
     border: 2px solid #f2f2f2;
   }
+}
 
-  .card-another__title {
-    @include text($Oswald, 16px, 20px);
-    color: #111111;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 9px;
+.card-another__title {
+  @include text($Oswald, 16px, 20px);
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 9px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
 
-    @include mediaTab {
-      margin: 0 auto;
-      font-size: 20px;
-      line-height: 24px;
-      width: 134px;
-      margin-bottom: 23px;
-      gap: 0;
-    }
+  @include mediaTab {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 24px;
+    width: 134px;
+    margin-bottom: 23px;
+    gap: 0;
+  }
 
-    @include mediaDesk {
-      gap: 38px;
-      margin-bottom: 26px;
-    }
+  @include mediaDesk {
+    gap: 38px;
+    margin-bottom: 26px;
+  }
 
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #d3d3d3;
+    mask-image: url("../../icons/catalog/plus.svg");
+  }
+
+  @include mediaTab {
     &::before {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 30px;
-      background-color: #d3d3d3;
-      mask-image: url("../../icons/catalog/plus.svg");
-    }
-
-    @include mediaTab {
-      &::before {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 50px;
-      }
-    }
-
-    @include mediaDesk {
-      &::before {
-        margin-bottom: 0;
-      }
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
     }
   }
 
-  .card-another__sutitle {
-    @include text($Lato, 12px, 16px);
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-
-    @include mediaTab {
-      font-size: 16px;
-      line-height: 18px;
-      width: 170px;
-      margin-bottom: 83px;
-    }
-
-    @include mediaDesk {
-      margin-bottom: 90px;
+  @include mediaDesk {
+    &::before {
+      margin-bottom: 0;
     }
   }
+}
 
-  .card-another__link {
-    background-color: #f2f2f2;
-    color: #444444;
-    margin: 0 auto;
+.card-another__sutitle {
+  @include text($Lato, 12px, 16px);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 
-    @include mediaTab {
-      width: 250px;
-    }
+  @include mediaTab {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+    margin-bottom: 83px;
+  }
 
-    @include mediaDesk {
-      width: 169px;
-    }
+  @include mediaDesk {
+    margin-bottom: 90px;
+  }
+}
+
+.card-another__link {
+  background-color: #f2f2f2;
+  color: #444444;
+  margin: 0 auto;
+
+  @include mediaTab {
+    width: 250px;
+  }
+
+  @include mediaDesk {
+    width: 169px;
   }
 }

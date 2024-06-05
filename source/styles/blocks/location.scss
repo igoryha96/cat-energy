@@ -3,34 +3,35 @@
   margin: 0 auto;
   width: 100%;
   position: relative;
-  // .location__wrapper
+}
+// .location__wrapper
 
-  .location__wrapper {
-    width: 320px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 65px 22px 26px 20px;
-  }
+.location__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 22px 26px 20px;
+  background-color: #ffffff;
+}
 
-  // .location__advert
+// .location__advert
 
-  .location__advert {
-    margin: 0;
+.location__advert {
+  margin: 0;
 
-    @include text($Oswald, 16px, 20px);
-    color: #000000;
-    text-transform: uppercase;
-    width: 140px;
-  }
+  @include text($Oswald, 16px, 20px);
+  color: #000000;
+  text-transform: uppercase;
+  width: 140px;
+}
 
-  // .location__adress
+// .location__adress
 
-  .location__adress {
-    @include text($Lato, 14px, 20px);
-    font-style: normal;
-  }
+.location__adress {
+  @include text($Lato, 14px, 20px);
+  font-style: normal;
 }
 
 //Media
@@ -38,32 +39,32 @@
 @include mediaTab {
   .location {
     margin: 0 auto;
+  }
 
-    .location__wrapper {
-      width: 768px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 60px 70px 60px 69px;
-    }
+  .location__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 70px 60px 69px;
+  }
 
-    .location__advert {
-      @include text($Oswald, 20px, 26px);
-      max-width: 163px;
-      text-align: left;
-      width: 163px;
-    }
+  .location__advert {
+    @include text($Oswald, 20px, 26px);
+    max-width: 163px;
+    text-align: left;
+    width: 163px;
+  }
 
-    .location__adress {
-      @include text($Lato, 16px, 20px);
-      max-width: 157px;
-      text-align: right;
-      min-height: 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+  .location__adress {
+    @include text($Lato, 16px, 20px);
+    max-width: 157px;
+    text-align: right;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -72,27 +73,27 @@
 @include mediaDesk {
   .location {
     background-color: #f2f2f2;
+  }
 
-    .location__container {
-      width: 1440px;
-      margin: 0 auto;
-      position: relative;
-    }
+  .location__container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
 
-    .location__wrapper {
-      padding: 60px 78px 60px 80px;
-      background-color: #ffffff;
-      width: 565px;
-      position: absolute;
-      left: 110px;
-      top: 95px;
-    }
+  .location__wrapper {
+    padding: 60px 78px 60px 80px;
+    background-color: #ffffff;
+    width: 565px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+  }
 
-    .location__adress {
-      text-align: start;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+  .location__adress {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

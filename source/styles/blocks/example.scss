@@ -1,71 +1,73 @@
 .example {
   background-color: #eaeaea;
   width: 100%;
+  padding-bottom: 40px;
 
   @include mediaTab {
+    padding-bottom: 0;
     padding-top: 45px;
     background: linear-gradient(#ffffff 620px, #eaeaea 384px);
     min-width: 100%;
   }
+}
 
-  .example__wrapper {
-    max-width: 320px;
+.example__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @include mediaTab {
+    max-width: 768px;
+    padding: 0 30px;
     margin: 0 auto;
+  }
+}
 
-    @include mediaTab {
-      max-width: 768px;
-      padding: 0 30px;
-      margin: 0 auto;
-    }
+.example__title {
+  padding: 0 20px;
+  margin: 0;
+
+  @media (max-width: 360px) {
+    margin-top: 30px;
+    padding-top: 25px;
   }
 
-  .example__title {
-    padding: 0 20px;
+  margin-bottom: 40px;
+
+  @include mediaTab {
+    padding: 0;
     margin: 0;
-
-    @media (max-width: 360px) {
-      margin-top: 30px;
-      padding-top: 25px;
-    }
-
-    margin-bottom: 40px;
-
-    @include mediaTab {
-      padding: 0;
-      margin: 0;
-      margin-bottom: 60px;
-    }
+    margin-bottom: 60px;
   }
+}
 
-  .example__text {
-    font-size: 14px;
-    line-height: 18px;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0 20px;
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
 
-    @include mediaTab {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 55px;
-      padding: 0;
-    }
+  @include mediaTab {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+    padding: 0;
   }
+}
 
-  .example__modules {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 20px;
-    row-gap: 20px;
-    margin-bottom: 20px;
+.example__modules {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  row-gap: 20px;
+  margin-bottom: 20px;
 
-    @include mediaTab {
-      gap: 43px;
-      padding: 0;
-      margin-bottom: 105;
-    }
+  @include mediaTab {
+    gap: 43px;
+    padding: 0;
+    margin-bottom: 105;
   }
 }
 
@@ -97,51 +99,51 @@
   .example {
     padding: 0;
     background: linear-gradient(#ffffff 136px, #f2f2f2 136px);
+  }
 
-    .example__wrapper {
-      max-width: 1440px;
-      padding: 0 110px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 560px;
-    }
+  .example__wrapper {
+    max-width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 560px;
+  }
 
-    .example__title {
-      margin-bottom: 76px;
-      font-size: 60px;
-      line-height: 60px;
-      min-width: 610px;
-    }
+  .example__title {
+    margin-bottom: 76px;
+    font-size: 60px;
+    line-height: 60px;
+    min-width: 610px;
+  }
 
-    .example__text {
-      padding-top: 70px;
-      padding-right: 228px;
-      margin-bottom: 69px;
-    }
+  .example__text {
+    margin-top: 70px;
+    margin-bottom: 69px;
+    padding-right: 228px;
+  }
 
-    .example__modules {
-      display: flex;
-      flex-flow: row wrap;
-      gap: 42px;
-      row-gap: 55px;
-      width: 366px;
-      margin: 0;
-    }
+  .example__modules {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 42px;
+    row-gap: 55px;
+    width: 366px;
+    margin: 0;
+  }
 
-    .example__expenses {
-      margin: 0;
-      width: 366px;
-      gap: 66px;
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 75px;
-    }
+  .example__expenses {
+    margin: 0;
+    width: 366px;
+    gap: 66px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 75px;
+  }
 
-    .example__slider {
-      padding: 0;
-      width: 560px;
-      grid-row: 1 / 4;
-      grid-column: 2 /3;
-    }
+  .example__slider {
+    padding: 0;
+    width: 560px;
+    grid-row: 1 / 4;
+    grid-column: 2 /3;
   }
 }

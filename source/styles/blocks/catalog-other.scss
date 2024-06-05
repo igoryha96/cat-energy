@@ -7,85 +7,85 @@
     width: 100%;
     padding: 0;
   }
+}
 
-  .catalog-other__title {
-    @include text($Oswald, 24px, 24px);
-    font-weight: 400;
-    color: #000000;
-    padding-bottom: 36px;
-    margin: 0;
-    margin-bottom: 12px;
-    position: relative;
-    width: fit-content;
-    background-color: #ffffff;
-    box-shadow:
-      -40px 0 #ffffff,
-      40px 0 #ffffff;
+.catalog-other__title {
+  @include text($Oswald, 24px, 24px);
+  font-weight: 400;
+  color: #000000;
+  padding-bottom: 36px;
+  margin: 0;
+  margin-bottom: 12px;
+  position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow:
+    -40px 0 #ffffff,
+    40px 0 #ffffff;
 
+  &::before {
+    content: "";
+    z-index: -1;
+    background-color: #68b738;
+    width: 100vw;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    box-shadow: 100vw 0 #68b738;
+  }
+
+  @include mediaTab {
     &::before {
-      content: "";
-      z-index: -1;
-      background-color: #68b738;
-      width: 100vw;
-      height: 2px;
-      display: block;
-      position: absolute;
-      top: 11px;
-      right: 0;
-      box-shadow: 100vw 0 #68b738;
-    }
-
-    @include mediaTab {
-      &::before {
-        top: 13px;
-      }
-    }
-
-    @include mediaDesk {
-      &::before {
-        top: 15px;
-      }
-    }
-
-    &::after {
-      content: "";
-      width: 280px;
-      height: 1px;
-      background-color: #cdcdcd;
-      bottom: 0;
-      position: absolute;
-      left: 0;
-    }
-
-    @include mediaTab {
-      &::after {
-        display: none;
-      }
-    }
-
-
-    @include mediaTab {
-      font-size: 32px;
-      line-height: 32px;
-      margin-bottom: 43px;
-      border-bottom: none;
-    }
-
-    @include mediaDesk {
-      font-size: 40px;
-      line-height: 40px;
-      margin-bottom: 40px;
-      border-bottom: none;
+      top: 13px;
     }
   }
 
-  .catalog-other__list {
-    @include listReset;
-    margin: 0;
-    margin-bottom: 34px;
-
-    @include mediaTab {
-      margin-bottom: 69px;
+  @include mediaDesk {
+    &::before {
+      top: 15px;
     }
+  }
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #cdcdcd;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+  }
+
+  @include mediaTab {
+    &::after {
+      display: none;
+    }
+  }
+
+
+  @include mediaTab {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 43px;
+    border-bottom: none;
+  }
+
+  @include mediaDesk {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+    border-bottom: none;
+  }
+}
+
+.catalog-other__list {
+  @include listReset;
+  margin: 0;
+  margin-bottom: 34px;
+
+  @include mediaTab {
+    margin-bottom: 69px;
   }
 }

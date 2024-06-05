@@ -1,32 +1,97 @@
 .footer {
   background-color: #f2f2f2;
   // .footer__wrapper
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+
+  a {
+    @include linkReset;
+  }
+}
+
+// .footer__pic-logo
+
+.footer__logo-wrap {
+  padding: 18px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 280px;
+    border-bottom: solid 1px #d9d9d9;
+    left: -76px;
+    bottom: 0;
+  }
+}
+
+.footer__pic-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 280px;
+    border-bottom: solid 1px #d9d9d9;
+    left: -76px;
+    bottom: 0;
+  }
+}
+
+// .footer__academy
+
+.footer__academy {
+  a {
+    @include linkReset;
+  }
+}
+
+//Media tab
+
+@include mediaTab {
+  .footer {
+    width: 100%;
+  }
 
   .footer__wrapper {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
+    padding: 55px 30px;
+    flex-direction: row;
+    width: 768px;
+    margin: 0 auto;
 
     a {
       @include linkReset;
     }
   }
 
-  // .footer__pic-logo
-
   .footer__logo-wrap {
-    padding: 18px 0;
+    padding: 0;
     position: relative;
+    margin-right: 160px;
 
     &::after {
       content: "";
-      display: block;
-      position: absolute;
-      width: 280px;
-      border-bottom: solid 1px #d9d9d9;
-      left: -76px;
-      bottom: 0;
+      display: none;
     }
   }
 
@@ -41,82 +106,17 @@
   }
 
   .footer__social {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    position: relative;
-
     &::after {
       content: "";
-      display: block;
-      position: absolute;
-      width: 280px;
-      border-bottom: solid 1px #d9d9d9;
-      left: -76px;
-      bottom: 0;
+      display: none;
     }
   }
-
-  // .footer__academy
 
   .footer__academy {
+    margin-left: auto;
+
     a {
       @include linkReset;
-    }
-  }
-}
-
-//Media tab
-
-@include mediaTab {
-  .footer {
-    width: 100%;
-
-    .footer__wrapper {
-      padding: 55px 30px;
-      flex-direction: row;
-      width: 768px;
-      margin: 0 auto;
-
-      a {
-        @include linkReset;
-      }
-    }
-
-    .footer__logo-wrap {
-      padding: 0;
-      position: relative;
-      margin-right: 160px;
-
-      &::after {
-        content: "";
-        display: none;
-      }
-    }
-
-    .footer__pic-logo {
-      &:hover {
-        opacity: 0.8;
-      }
-
-      &:active {
-        opacity: 0.6;
-      }
-    }
-
-    .footer__social {
-      &::after {
-        content: "";
-        display: none;
-      }
-    }
-
-    .footer__academy {
-      margin-left: auto;
-
-      a {
-        @include linkReset;
-      }
     }
   }
 }
@@ -125,50 +125,50 @@
   .footer {
     width: 100%;
     margin: 0 auto;
+  }
 
-    .footer__wrapper {
-      margin: 0 auto;
-      width: 1440px;
-      padding: 66px 110px;
-      flex-direction: row;
+  .footer__wrapper {
+    margin: 0 auto;
+    width: 1440px;
+    padding: 66px 110px;
+    flex-direction: row;
 
-      a {
-        @include linkReset;
-      }
+    a {
+      @include linkReset;
+    }
+  }
+
+  .footer__logo-wrap {
+    padding: 0;
+    position: relative;
+    margin-right: 416px;
+
+    &::after {
+      content: "";
+      display: none;
+    }
+  }
+
+  .footer__pic-logo {
+    &:hover {
+      opacity: 0.8;
     }
 
-    .footer__logo-wrap {
-      padding: 0;
-      position: relative;
-      margin-right: 416px;
-
-      &::after {
-        content: "";
-        display: none;
-      }
+    &:active {
+      opacity: 0.6;
     }
+  }
 
-    .footer__pic-logo {
-      &:hover {
-        opacity: 0.8;
-      }
-
-      &:active {
-        opacity: 0.6;
-      }
+  .footer__social {
+    &::after {
+      content: "";
+      display: none;
     }
+  }
 
-    .footer__social {
-      &::after {
-        content: "";
-        display: none;
-      }
-    }
-
-    .footer__academy {
-      a {
-        @include linkReset;
-      }
+  .footer__academy {
+    a {
+      @include linkReset;
     }
   }
 }
