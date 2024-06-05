@@ -2,6 +2,19 @@
   display: flex;
   align-items: center;
   padding: 20px 0;
+
+  &:hover,
+  &:focus-visible {
+    .academy__link::after {
+      background-color: #68b738;
+    }
+  }
+
+  &:active {
+    .academy__link {
+      opacity: 0.3;
+    }
+  }
 }
 
 .academy__link {
@@ -25,18 +38,6 @@
   }
 }
 
-&:hover,
-&:focus-visible {
-  .academy__link::after {
-    background-color: #68b738;
-  }
-}
-
-&:active {
-  .academy__link {
-    opacity: 0.3;
-  }
-}
 
 //media tab
 
